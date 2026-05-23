@@ -1,0 +1,23 @@
+experiment:
+  name: reliamol3d_proxy_v0
+  output_dir: outputs/proxy_v0
+  seed: 20260505
+data:
+  n_pockets: 2200
+  candidates_per_pocket: 48
+  generators: [Pocket2Mol, TargetDiff, DiffSBDD, DecompDiff]
+  feature_dim: 40
+  target_family_count: 55
+model:
+  epochs: 30
+  batch_size: 4096
+  lr: 0.001
+  hidden_dim: 256
+  dropout: 0.15
+  focal_gamma: 1.5
+  failure_loss_weight: 0.5
+  calibration_loss_weight: 0.05
+evaluation:
+  topk_fracs: [0.01, 0.05, 0.10]
+  seeds: [1, 2, 3, 4, 5]
+

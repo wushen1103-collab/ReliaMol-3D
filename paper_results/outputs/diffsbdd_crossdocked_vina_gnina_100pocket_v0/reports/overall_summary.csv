@@ -1,0 +1,2 @@
+n_candidates,n_pockets,ligand_prep_success_rate,vina_success_rate,gnina_success_rate,reliable_proxy_rate,median_vina_affinity,median_gnina_cnnscore
+10000,100,0.9901,0.9901,0.9901,0.9304,-4.696,0.45132

@@ -1,0 +1,4 @@
+score,topk_frac,n_selected,reliable_proxy_rate,chemical_pass_rate,geometry_pass_rate,pocket_pass_rate,clash_free_rate,median_vina_affinity
+vina_score_only,0.1,1,1.0,1.0,1.0,1.0,1.0,-8.153
+vina_score_only,0.2,1,1.0,1.0,1.0,1.0,1.0,-8.153
+vina_score_only,0.5,3,1.0,1.0,1.0,1.0,1.0,-6.952

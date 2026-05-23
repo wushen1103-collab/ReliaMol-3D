@@ -1,0 +1,10 @@
+{
+  "created_at_utc": "2026-05-08T02:14:44.189331+00:00",
+  "n_tasks": 20,
+  "if3_archive": "/home/test/wsk/public_generators/if3_crossdocked2020/crossdocked_pocket10.tar.gz",
+  "if3_extract_dir": "/home/test/wsk/public_generators/if3_crossdocked2020/selected_pockets",
+  "vina": "/home/test/wsk/TASC-VS/environment/tasvs_vina_screen_v2/bin/vina",
+  "gnina": "/home/test/miniconda3/envs/posebench310/bin/gnina",
+  "gnina_cnn": "crossdock_default2018",
+  "note": "IF3 pocket PDBs were used only after coordinate identity to CrossDocked gninatypes was verified in if3_pocket_pdb_alignment.csv."
+}

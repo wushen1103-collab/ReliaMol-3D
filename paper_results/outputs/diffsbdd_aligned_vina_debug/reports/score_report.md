@@ -1,0 +1,15 @@
+# DiffSBDD Aligned Vina Score-Only Check
+
+Only pockets marked usable_public_pdb_alignment in the audit are included.
+
+## Overall
+
+n_candidates,n_pockets,ligand_prep_success_rate,vina_success_rate,reliable_proxy_rate,median_vina_affinity,median_vina_affinity_reliable,median_vina_affinity_unreliable
+5,1,1.0,1.0,1.0,-5.939,-5.939,
+
+## Vina Reranking
+
+score,topk_frac,n_selected,reliable_proxy_rate,chemical_pass_rate,geometry_pass_rate,pocket_pass_rate,clash_free_rate,median_vina_affinity
+vina_score_only,0.1,1,1.0,1.0,1.0,1.0,1.0,-8.153
+vina_score_only,0.2,1,1.0,1.0,1.0,1.0,1.0,-8.153
+vina_score_only,0.5,3,1.0,1.0,1.0,1.0,1.0,-6.952

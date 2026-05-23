@@ -1,0 +1,2 @@
+n_candidates,n_pockets,ligand_prep_success_rate,vina_success_rate,reliable_proxy_rate,median_vina_affinity,median_vina_affinity_reliable,median_vina_affinity_unreliable
+5,1,1.0,1.0,1.0,-5.939,-5.939,

@@ -1,0 +1,5 @@
+alignment_status,n_pockets,n_candidates,mean_reliable_proxy_rate,mean_pocket_failure_proxy_rate,mean_clash_failure_proxy_rate,median_min_dist_to_receptor,median_receptor_contacts_4p5
+high_clash_alignment,7,700,0.13285714285714284,0.002857142857142857,0.8642857142857142,0.6631191372871399,18.0
+coordinate_mismatch,44,4400,0.0,1.0,0.0,54.124013900756836,0.0
+ambiguous,10,1000,0.056999999999999995,0.9410000000000001,0.001,7.824552893638611,0.0
+usable_public_pdb_alignment,39,3900,0.94,0.003846153846153846,0.03974358974358975,2.6348884105682373,23.0

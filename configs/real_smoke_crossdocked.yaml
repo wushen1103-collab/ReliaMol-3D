@@ -1,0 +1,22 @@
+experiment:
+  name: crossdocked_tensor_real_smoke_v2
+  output_dir: outputs/real_smoke_crossdocked_v2
+  seed: 20260505
+data:
+  zip_path: /home/test/wsk/TASC-VS/data/crossdocked2020/crossdocked.zip
+  train_pockets: 900
+  val_pockets: 300
+  test_pockets: 100
+  candidates_per_generator: 10
+  generators: [NativeNear, DriftGen, ClashGen, ScoreHackGen]
+model:
+  epochs: 35
+  batch_size: 2048
+  lr: 0.001
+  hidden_dim: 192
+  dropout: 0.12
+  focal_gamma: 1.5
+  failure_loss_weight: 0.5
+  calibration_loss_weight: 0.05
+evaluation:
+  topk_fracs: [0.01, 0.05, 0.10]

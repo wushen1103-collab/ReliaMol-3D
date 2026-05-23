@@ -1,0 +1,14 @@
+{
+  "n_candidates": 3900,
+  "n_success": 3862,
+  "n_ligand_prep_failed": 38,
+  "all_reliable_proxy_rate": 0.94,
+  "success_reliable_proxy_rate": 0.940704298291041,
+  "vina_reliable_roc_auc_success_only": 0.8657556820845309,
+  "vina_reliable_pr_auc_success_only": 0.9866393477700482,
+  "vina_unreliable_pr_auc_success_only": 0.41292237396633535,
+  "median_vina_affinity_reliable": -4.087,
+  "median_vina_affinity_unreliable": 17.311,
+  "top10_mean_reliable_proxy_rate_by_pocket": 0.9923076923076923,
+  "top10_min_reliable_proxy_rate_by_pocket": 0.8
+}

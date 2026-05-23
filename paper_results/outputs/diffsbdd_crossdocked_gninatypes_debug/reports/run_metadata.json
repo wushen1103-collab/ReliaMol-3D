@@ -1,0 +1,14 @@
+{
+  "created_at_utc": "2026-05-07T16:50:45.462508+00:00",
+  "source": "DiffSBDD official Zenodo sampled molecules audited against CrossDocked2020 receptor gninatypes coordinates.",
+  "sdf_root": "/home/test/wsk/public_generators/diffsbdd_zenodo_8239058/extracted/crossdocked_fullatom_cond",
+  "archive": "/home/test/wsk/public_generators/crossdocked2020_receptors_v1_0/CrossDocked2020_receptors.tgz",
+  "index": "/home/test/wsk/public_generators/crossdocked2020_receptors_v1_0/tar_index.txt",
+  "extract_dir": "/home/test/wsk/public_generators/crossdocked2020_receptors_v1_0/selected_receptors",
+  "max_files": 3,
+  "max_mols_per_file": 10,
+  "n_files": 3,
+  "n_matching_receptors": 3,
+  "n_candidates": 30,
+  "note": "gninatypes is parsed as little-endian float32 x/y/z plus int32 atom type records."
+}

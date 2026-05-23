@@ -1,0 +1,2 @@
+n_candidates,n_pockets,posebusters_pass_rate,reliability_proxy_rate,mol_pred_loaded_pass_rate,sanitization_pass_rate,inchi_convertible_pass_rate,all_atoms_connected_pass_rate,no_radicals_pass_rate,bond_lengths_pass_rate,bond_angles_pass_rate,internal_steric_clash_pass_rate,aromatic_ring_flatness_pass_rate,non-aromatic_ring_non-flatness_pass_rate,double_bond_flatness_pass_rate
+10000,100,0.5732,0.9304,1.0,1.0,1.0,1.0,1.0,0.7565,0.704,0.8972,0.9987,0.9876,0.9917

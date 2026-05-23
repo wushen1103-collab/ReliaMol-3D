@@ -1,0 +1,2 @@
+n_candidates,n_pockets,sanitize_rate,has_3d_rate,reliable_proxy_rate,chemical_failure_proxy_rate,geometric_failure_proxy_rate,pocket_failure_proxy_rate,clash_failure_proxy_rate,synthetic_failure_proxy_rate,median_qed,median_sa_proxy,median_min_dist_to_receptor,median_receptor_contacts_4p5
+10000,100,1.0,1.0,0.9304,0.001,0.0143,0.0,0.0502,0.0093,0.47525072757035136,4.060746673496057,2.6063321828842163,23.0

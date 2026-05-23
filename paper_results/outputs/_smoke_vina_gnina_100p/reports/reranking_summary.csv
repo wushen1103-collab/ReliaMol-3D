@@ -1,0 +1,13 @@
+method,topk_frac,n_selected,reliable_proxy_rate,posebusters_pass_rate,clash_free_rate,median_vina_affinity,median_gnina_cnnscore
+vina,0.1,2,0.5,0.5,0.5,-2.8015,0.641345
+vina,0.2,4,0.5,0.5,0.5,-2.7115,0.636815
+vina,0.5,10,0.6,0.6,0.7,-2.3945,0.62431
+gnina_affinity,0.1,2,0.5,0.5,0.5,-2.7305,0.636815
+gnina_affinity,0.2,4,0.5,0.5,0.5,-2.7115,0.636815
+gnina_affinity,0.5,10,0.6,0.6,0.7,-2.3945,0.62431
+gnina_cnnscore,0.1,2,1.0,1.0,1.0,-1.644,0.72671
+gnina_cnnscore,0.2,4,0.5,1.0,0.5,-2.3129999999999997,0.6878299999999999
+gnina_cnnscore,0.5,10,0.7,0.8,0.7,-2.0915,0.63618
+gnina_cnnaffinity,0.1,2,1.0,0.5,1.0,-2.1790000000000003,0.483765
+gnina_cnnaffinity,0.2,4,0.75,0.5,0.75,-2.3795,0.600495
+gnina_cnnaffinity,0.5,10,0.7,0.8,0.7,-2.2925,0.62431

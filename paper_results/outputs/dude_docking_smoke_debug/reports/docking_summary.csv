@@ -1,0 +1,3 @@
+target,source_class,n,success_rate,median_vina_score,median_center_to_crystal,frac_center_within_8A,frac_any_pocket_contact_4p5,frac_any_receptor_clash_1p2,median_pocket_contacts_4p5
+adrb2,active,1,1.0,-7.894,0.8481587456808211,1.0,1.0,0.0,32.0
+adrb2,decoy,1,1.0,-9.454,2.3879853175338193,1.0,1.0,0.0,35.0

@@ -1,0 +1,15 @@
+{
+  "created_at_utc": "2026-05-07T12:22:04.981724+00:00",
+  "dude_root": "/home/test/wsk/external_benchmarks/dude_subset",
+  "targets": [
+    "adrb2",
+    "bace1",
+    "cp3a4"
+  ],
+  "max_per_class": 100,
+  "outputs": {
+    "candidate_audit": "outputs/dude_public_pool_v0/reports/candidate_audit.csv",
+    "target_summary": "outputs/dude_public_pool_v0/reports/target_summary.csv",
+    "decision_report": "outputs/dude_public_pool_v0/reports/decision_report.md"
+  }
+}

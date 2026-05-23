@@ -1,0 +1,145 @@
+{
+  "pool_reliable_rate_success_only": 0.940704298291041,
+  "top10": [
+    {
+      "method": "vina_score_only",
+      "reliable_proxy_rate_mean": 0.9923076923076924,
+      "reliable_proxy_rate_std": 0.0
+    },
+    {
+      "method": "qed_sa_vina",
+      "reliable_proxy_rate_mean": 0.9948717948717948,
+      "reliable_proxy_rate_std": 0.0
+    },
+    {
+      "method": "mlp_score_only",
+      "reliable_proxy_rate_mean": 0.9923076923076924,
+      "reliable_proxy_rate_std": 0.0
+    },
+    {
+      "method": "mlp_ligand_descriptor",
+      "reliable_proxy_rate_mean": 0.982051282051282,
+      "reliable_proxy_rate_std": 0.0044411559168433
+    },
+    {
+      "method": "mlp_pose_shape",
+      "reliable_proxy_rate_mean": 0.9957264957264956,
+      "reliable_proxy_rate_std": 0.0014803853056144
+    },
+    {
+      "method": "mlp_reliamol_noleak",
+      "reliable_proxy_rate_mean": 0.9974358974358974,
+      "reliable_proxy_rate_std": 0.0025641025641025
+    },
+    {
+      "method": "rf_reliamol_noleak",
+      "reliable_proxy_rate_mean": 1.0,
+      "reliable_proxy_rate_std": 0.0
+    },
+    {
+      "method": "hgb_reliamol_noleak",
+      "reliable_proxy_rate_mean": 0.9974358974358974,
+      "reliable_proxy_rate_std": 0.0044411559168432
+    }
+  ],
+  "top20": [
+    {
+      "method": "vina_score_only",
+      "reliable_proxy_rate_mean": 0.988431876606684,
+      "reliable_proxy_rate_std": 0.0
+    },
+    {
+      "method": "qed_sa_vina",
+      "reliable_proxy_rate_mean": 0.988431876606684,
+      "reliable_proxy_rate_std": 0.0
+    },
+    {
+      "method": "mlp_score_only",
+      "reliable_proxy_rate_mean": 0.988431876606684,
+      "reliable_proxy_rate_std": 0.0
+    },
+    {
+      "method": "mlp_ligand_descriptor",
+      "reliable_proxy_rate_mean": 0.9665809768637532,
+      "reliable_proxy_rate_std": 0.003400708626047
+    },
+    {
+      "method": "mlp_pose_shape",
+      "reliable_proxy_rate_mean": 0.9927163667523564,
+      "reliable_proxy_rate_std": 0.0032347191239377
+    },
+    {
+      "method": "mlp_reliamol_noleak",
+      "reliable_proxy_rate_mean": 0.99528706083976,
+      "reliable_proxy_rate_std": 0.0019634000406837
+    },
+    {
+      "method": "rf_reliamol_noleak",
+      "reliable_proxy_rate_mean": 0.998286203941731,
+      "reliable_proxy_rate_std": 0.0007420954616833
+    },
+    {
+      "method": "hgb_reliamol_noleak",
+      "reliable_proxy_rate_mean": 0.9940017137960584,
+      "reliable_proxy_rate_std": 0.0039268000813674
+    }
+  ],
+  "auc": [
+    {
+      "method": "vina_score_only",
+      "roc_auc_mean": 0.8657634949883227,
+      "roc_auc_std": 0.0,
+      "pr_auc_mean": 0.9866412902769932,
+      "pr_auc_std": 0.0
+    },
+    {
+      "method": "qed_sa_vina",
+      "roc_auc_mean": 0.8704668630710483,
+      "roc_auc_std": 0.0,
+      "pr_auc_mean": 0.9879078278669858,
+      "pr_auc_std": 0.0
+    },
+    {
+      "method": "mlp_score_only",
+      "roc_auc_mean": 0.854201399030639,
+      "roc_auc_std": 0.0021923801726522,
+      "pr_auc_mean": 0.9843798378469928,
+      "pr_auc_std": 0.0002176145426277
+    },
+    {
+      "method": "mlp_ligand_descriptor",
+      "roc_auc_mean": 0.5700444854722059,
+      "roc_auc_std": 0.0216297469381549,
+      "pr_auc_mean": 0.9518800021129018,
+      "pr_auc_std": 0.0019585648896312
+    },
+    {
+      "method": "mlp_pose_shape",
+      "roc_auc_mean": 0.9378621731651996,
+      "roc_auc_std": 0.0185494812245335,
+      "pr_auc_mean": 0.9948938450733188,
+      "pr_auc_std": 0.0026091156776126
+    },
+    {
+      "method": "mlp_reliamol_noleak",
+      "roc_auc_mean": 0.9422375996195316,
+      "roc_auc_std": 0.0143992124082403,
+      "pr_auc_mean": 0.9953319205040772,
+      "pr_auc_std": 0.0017875716001552
+    },
+    {
+      "method": "rf_reliamol_noleak",
+      "roc_auc_mean": 0.959313602345634,
+      "roc_auc_std": 0.0054418056068881,
+      "pr_auc_mean": 0.9973837353347356,
+      "pr_auc_std": 0.0003669545055427
+    },
+    {
+      "method": "hgb_reliamol_noleak",
+      "roc_auc_mean": 0.9586360833552696,
+      "roc_auc_std": 0.0149406517970613,
+      "pr_auc_mean": 0.996925447372662,
+      "pr_auc_std": 0.0015956160605884
+    }
+  ]
+}

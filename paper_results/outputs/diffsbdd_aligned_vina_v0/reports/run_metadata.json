@@ -1,0 +1,7 @@
+{
+  "created_at_utc": "2026-05-07T15:07:17.178523+00:00",
+  "audit_dir": "outputs/diffsbdd_public_audit_v0/reports",
+  "n_pockets": 39,
+  "n_candidates": 3900,
+  "note": "Vina score-only check on DiffSBDD official samples limited to public-PDB aligned pockets."
+}

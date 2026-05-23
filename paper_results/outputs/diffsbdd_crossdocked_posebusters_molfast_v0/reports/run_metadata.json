@@ -1,0 +1,9 @@
+{
+  "created_at_utc": "2026-05-07T18:24:04.335593+00:00",
+  "config": "mol_fast",
+  "audit_dir": "outputs/diffsbdd_crossdocked_gninatypes_audit_v0/reports",
+  "pred_dir": "outputs/diffsbdd_crossdocked_reliamol_v0/reports",
+  "n_candidates": 10000,
+  "n_pockets": 100,
+  "note": "PoseBusters _get_name is monkey-patched for compatibility with the RDKit build whose GetProp does not accept autoConvert."
+}

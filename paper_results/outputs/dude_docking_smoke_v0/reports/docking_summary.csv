@@ -1,0 +1,7 @@
+target,source_class,n,success_rate,median_vina_score,median_center_to_crystal,frac_center_within_8A,frac_any_pocket_contact_4p5,frac_any_receptor_clash_1p2,median_pocket_contacts_4p5
+adrb2,active,20,1.0,-7.879,4.500586192275237,0.8,1.0,0.0,28.0
+adrb2,decoy,20,1.0,-9.6625,5.6106683054652935,0.95,1.0,0.0,34.0
+bace1,active,20,1.0,-7.4079999999999995,3.6471626360024922,1.0,1.0,0.0,36.5
+bace1,decoy,20,1.0,-7.6525,3.5469373936393414,1.0,1.0,0.0,30.5
+cp3a4,active,20,1.0,-8.759,2.4609627943100496,1.0,1.0,0.0,28.0
+cp3a4,decoy,20,1.0,-8.7335,4.551761750480942,1.0,1.0,0.0,20.5

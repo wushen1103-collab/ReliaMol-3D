@@ -1,0 +1,10 @@
+method,feature_group,n_features,uses_vina_or_gnina,uses_failure_label_columns,uses_generator_identity
+qed,QED scalar baseline,1,False,False,False
+qed_sa,QED and SA scalar baseline,2,False,False,False
+rf_ligand_descriptor,Ligand descriptors only,22,False,False,False
+rf_internal_geometry,Internal 3D geometry only,8,False,False,False
+rf_pocket_geometry,Ligand-pocket geometry only,11,False,False,False
+rf_geometry_only,Internal + pocket geometry,19,False,False,False
+rf_ligand_internal,Ligand + internal geometry,30,False,False,False
+rf_ligand_pocket,Ligand + pocket geometry,33,False,False,False
+rf_full_reliamol_novinascore,Full ReliaMol without Vina,41,False,False,False

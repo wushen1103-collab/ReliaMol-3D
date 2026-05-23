@@ -1,0 +1,11 @@
+{
+  "created_at_utc": "2026-05-07T13:46:21.979860+00:00",
+  "source": "DiffSBDD official Zenodo sampled molecules, crossdocked_fullatom_cond.zip",
+  "sdf_root": "/home/test/wsk/public_generators/diffsbdd_zenodo_8239058/extracted/crossdocked_fullatom_cond",
+  "pdb_cache": "/home/test/wsk/public_generators/rcsb_pdb_cache",
+  "max_files": 5,
+  "max_mols_per_file": 100,
+  "n_files": 5,
+  "n_candidates": 500,
+  "note": "Receptors are public RCSB PDB files inferred from DiffSBDD CrossDocked-style sample filenames."
+}

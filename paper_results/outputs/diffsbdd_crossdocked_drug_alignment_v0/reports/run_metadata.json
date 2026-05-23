@@ -1,0 +1,15 @@
+{
+  "created_at_utc": "2026-05-22T05:19:09.740481+00:00",
+  "pred_dir": "outputs/diffsbdd_crossdocked_reliamol_v0/reports",
+  "n_candidates": 10000,
+  "n_pockets": 100,
+  "rdkit_note": "RDKit-pypi was installed in the remote project .conda_env for this audit.",
+  "noise_mode": "both",
+  "noise_sigmas": [
+    0.0,
+    0.1,
+    0.25,
+    0.5
+  ],
+  "admetlab_requested": true
+}

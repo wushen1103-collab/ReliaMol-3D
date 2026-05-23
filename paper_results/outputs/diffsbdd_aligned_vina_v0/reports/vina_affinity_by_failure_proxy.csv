@@ -1,0 +1,10 @@
+failure_proxy,flag,count,median_vina_affinity,mean_vina_affinity
+chemical_failure_proxy,False,3862,-3.9215,-0.13621154842050726
+geometric_failure_proxy,False,3813,-3.937,-0.1635664830841857
+geometric_failure_proxy,True,49,-2.335,1.9924489795918365
+pocket_failure_proxy,False,3847,-3.937,-0.1360592669612683
+pocket_failure_proxy,True,15,-0.181,-0.17526666666666663
+clash_failure_proxy,False,3711,-4.061,-1.5986453786041497
+clash_failure_proxy,True,151,29.647,35.80479470198675
+synthetic_failure_proxy,False,3835,-3.937,-0.2209582790091267
+synthetic_failure_proxy,True,27,7.565,11.900962962962963

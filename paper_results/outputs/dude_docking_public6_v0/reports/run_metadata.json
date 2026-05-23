@@ -1,0 +1,27 @@
+{
+  "created_at_utc": "2026-05-07T12:46:21.245655+00:00",
+  "dude_root": "/home/test/wsk/external_benchmarks/dude_subset",
+  "targets": [
+    "adrb2",
+    "bace1",
+    "cp3a4",
+    "pparg",
+    "src",
+    "try1"
+  ],
+  "max_per_class": 30,
+  "box_size": 24.0,
+  "exhaustiveness": 4,
+  "workers": 64,
+  "seed": 20260507,
+  "tools": {
+    "vina": "/home/test/wsk/TASC-VS/environment/tasvs_vina_screen_v2/bin/vina",
+    "mk_prepare_ligand": "/home/test/wsk/TASC-VS/environment/tasvs_rtm_rescore/bin/mk_prepare_ligand.py",
+    "mk_prepare_receptor": "/home/test/wsk/TASC-VS/environment/tasvs_rtm_rescore/bin/mk_prepare_receptor.py",
+    "obabel": "/home/test/wsk/TASC-VS/environment/tasvs_rtm_rescore/bin/obabel"
+  },
+  "outputs": {
+    "results": "outputs/dude_docking_public6_v0/reports/docking_results.csv",
+    "summary": "outputs/dude_docking_public6_v0/reports/docking_summary.csv"
+  }
+}

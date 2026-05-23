@@ -1,0 +1,8 @@
+stage,dataset,candidates,seconds,throughput_candidates_per_sec,notes
+matrix_assembly,DiffSBDD-10k,10000,0.010623808018863201,941282.0696914333,cached audit feature frame to numeric matrix
+rf_training,DiffSBDD-10k,10000,0.559270616970025,17880.431577430725,"260 trees, min_samples_leaf=3, 16 CPU jobs"
+matrix_assembly,DiffSBDD-10k inference matrix,10000,0.011468354030512273,871964.7103145206,cached audit feature frame to numeric matrix
+rf_inference,DiffSBDD-10k,10000,0.08747620205394924,114316.80577344562,"single trained RF, cached features"
+matrix_assembly,TargetDiff-family-38k inference matrix,38073,0.02530130697414279,1504783.9243604892,cached audit feature frame to numeric matrix
+rf_inference,TargetDiff-family-38k,38073,0.07703405700158328,494235.945527541,"single trained RF, cached features"
+rf_inference,DiffSBDD-feature-repeat-100k,100000,0.09706917498260736,1030193.1588263501,throughput stress test by repeating cached feature rows; not a new dataset

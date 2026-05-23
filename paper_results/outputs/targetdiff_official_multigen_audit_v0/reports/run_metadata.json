@@ -1,0 +1,17 @@
+{
+  "created_at_utc": "2026-05-08T03:39:01.325085+00:00",
+  "source_note": "TargetDiff README official sampling-result filenames loaded from the local mirror directory; SOURCE_MANIFEST.tsv records the concrete download source.",
+  "input_dir": "/home/test/wsk/public_generators/targetdiff_sampling_results",
+  "pocket_root": "/home/test/wsk/public_generators/if3_crossdocked2020/selected_pockets/crossdocked_pocket10",
+  "n_candidates": 38173,
+  "n_generators": 5,
+  "n_pockets": 100,
+  "source_files": {
+    "CrossDockedNative": "crossdocked_test_vina_docked.pt",
+    "CVAE": "cvae_vina_docked.pt",
+    "AR": "ar_vina_docked.pt",
+    "Pocket2Mol": "pocket2mol_vina_docked.pt",
+    "TargetDiff": "targetdiff_vina_docked.pt"
+  },
+  "failure_proxy_note": "Same proxy family as DiffSBDD CrossDocked audit: RDKit chemistry, internal geometry, pocket contact, receptor clash, and synthetic accessibility filters."
+}

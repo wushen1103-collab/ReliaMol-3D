@@ -1,0 +1,6 @@
+{
+  "created_at_utc": "2026-05-22T04:07:56.154433+00:00",
+  "python": "project .conda_env",
+  "runtime_scope": "cached audit feature frames; excludes original RDKit/receptor extraction",
+  "noise_scope": "test-time geometry distance-summary feature perturbation"
+}

@@ -1,0 +1,4 @@
+target,active_median_vina,decoy_median_vina,active_minus_decoy_median,p_active_scores_better_than_decoy,n_active,n_decoy
+adrb2,-7.879,-9.6625,1.7835,0.1425,20,20
+bace1,-7.4079999999999995,-7.6525,0.24450000000000038,0.4825,20,20
+cp3a4,-8.759,-8.7335,-0.025500000000000966,0.595,20,20

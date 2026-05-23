@@ -1,0 +1,85 @@
+status,http_status,text_head,start,n_request
+failed,404,"<!DOCTYPE html>
+<html lang=""en"">
+<head>
+  <meta http-equiv=""content-type"" content=""text/html; charset=utf-8"">
+  <title>Page not found at /api/admet</title>
+  <meta name=""robots"" content=""NONE,NOARCHIVE"">
+  <style type=""text/css"">
+    html * { padding:0; margin:0; }
+    body * { padding:10px 20px; }
+    body * * { padding:0; }
+    body { font:small sans-serif; background:#eee; color:#000; }
+    body>div { border-bottom:1px solid #ddd; }
+    h1 { font-weight:normal; margin-bottom:.4em; }
+    h1 sp",0,50
+failed,404,"<!DOCTYPE html>
+<html lang=""en"">
+<head>
+  <meta http-equiv=""content-type"" content=""text/html; charset=utf-8"">
+  <title>Page not found at /api/admet</title>
+  <meta name=""robots"" content=""NONE,NOARCHIVE"">
+  <style type=""text/css"">
+    html * { padding:0; margin:0; }
+    body * { padding:10px 20px; }
+    body * * { padding:0; }
+    body { font:small sans-serif; background:#eee; color:#000; }
+    body>div { border-bottom:1px solid #ddd; }
+    h1 { font-weight:normal; margin-bottom:.4em; }
+    h1 sp",50,50
+failed,404,"<!DOCTYPE html>
+<html lang=""en"">
+<head>
+  <meta http-equiv=""content-type"" content=""text/html; charset=utf-8"">
+  <title>Page not found at /api/admet</title>
+  <meta name=""robots"" content=""NONE,NOARCHIVE"">
+  <style type=""text/css"">
+    html * { padding:0; margin:0; }
+    body * { padding:10px 20px; }
+    body * * { padding:0; }
+    body { font:small sans-serif; background:#eee; color:#000; }
+    body>div { border-bottom:1px solid #ddd; }
+    h1 { font-weight:normal; margin-bottom:.4em; }
+    h1 sp",100,50
+failed,404,"<!DOCTYPE html>
+<html lang=""en"">
+<head>
+  <meta http-equiv=""content-type"" content=""text/html; charset=utf-8"">
+  <title>Page not found at /api/admet</title>
+  <meta name=""robots"" content=""NONE,NOARCHIVE"">
+  <style type=""text/css"">
+    html * { padding:0; margin:0; }
+    body * { padding:10px 20px; }
+    body * * { padding:0; }
+    body { font:small sans-serif; background:#eee; color:#000; }
+    body>div { border-bottom:1px solid #ddd; }
+    h1 { font-weight:normal; margin-bottom:.4em; }
+    h1 sp",150,50
+failed,404,"<!DOCTYPE html>
+<html lang=""en"">
+<head>
+  <meta http-equiv=""content-type"" content=""text/html; charset=utf-8"">
+  <title>Page not found at /api/admet</title>
+  <meta name=""robots"" content=""NONE,NOARCHIVE"">
+  <style type=""text/css"">
+    html * { padding:0; margin:0; }
+    body * { padding:10px 20px; }
+    body * * { padding:0; }
+    body { font:small sans-serif; background:#eee; color:#000; }
+    body>div { border-bottom:1px solid #ddd; }
+    h1 { font-weight:normal; margin-bottom:.4em; }
+    h1 sp",200,50
+failed,404,"<!DOCTYPE html>
+<html lang=""en"">
+<head>
+  <meta http-equiv=""content-type"" content=""text/html; charset=utf-8"">
+  <title>Page not found at /api/admet</title>
+  <meta name=""robots"" content=""NONE,NOARCHIVE"">
+  <style type=""text/css"">
+    html * { padding:0; margin:0; }
+    body * { padding:10px 20px; }
+    body * * { padding:0; }
+    body { font:small sans-serif; background:#eee; color:#000; }
+    body>div { border-bottom:1px solid #ddd; }
+    h1 { font-weight:normal; margin-bottom:.4em; }
+    h1 sp",250,50
