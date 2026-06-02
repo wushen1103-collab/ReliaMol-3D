@@ -16,7 +16,7 @@ SEEDS=(1 2 3 4 5)
 SPLITS=(random unseen_family)
 GENERATORS=(Pocket2Mol TargetDiff DiffSBDD DecompDiff)
 
-mkdir -p logs outputs/proxy_v0
+mkdir -p logs outputs/proxy
 
 job_id=0
 for seed in "${SEEDS[@]}"; do
@@ -37,4 +37,4 @@ for seed in "${SEEDS[@]}"; do
 done
 
 wait
-"$PYTHON" scripts/summarize_outputs.py --input outputs/proxy_v0 --output reports/proxy_v0_summary.csv
+"$PYTHON" scripts/summarize_outputs.py --input outputs/proxy --output reports/proxy_summary.csv

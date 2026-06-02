@@ -1,7 +1,7 @@
 experiment:
-  name: reliamol3d_proxy_v0
-  output_dir: outputs/proxy_v0
-  seed: 20260505
+  name: reliamol3d_proxy
+  output_dir: outputs/proxy
+  seed: 42
 data:
   n_pockets: 2200
   candidates_per_pocket: 48

@@ -327,8 +327,8 @@ def summarize(metrics: pd.DataFrame, rerank: pd.DataFrame, output_dir: Path) -> 
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="ReliaMol multi-generator evaluation on TargetDiff official sampling-result metadata.")
-    parser.add_argument("--audit-dir", type=Path, default=Path("outputs/targetdiff_official_multigen_audit_v0/reports"))
-    parser.add_argument("--output-dir", type=Path, default=Path("outputs/targetdiff_official_multigen_reliamol_v0"))
+    parser.add_argument("--audit-dir", type=Path, default=Path("outputs/targetdiff_official_multigen_audit/reports"))
+    parser.add_argument("--output-dir", type=Path, default=Path("outputs/targetdiff_official_multigen_reliamol"))
     parser.add_argument("--generators", nargs="+", default=["TargetDiff", "Pocket2Mol", "CVAE", "AR"])
     parser.add_argument("--seeds", nargs="+", type=int, default=[11, 22, 33])
     parser.add_argument("--n-folds", type=int, default=5)

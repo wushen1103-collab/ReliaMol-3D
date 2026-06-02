@@ -318,7 +318,7 @@ def parse_args() -> argparse.Namespace:
         type=Path,
         default=Path("/home/test/wsk/public_generators/crossdocked2020_receptors_v1_0/selected_receptors"),
     )
-    parser.add_argument("--output-dir", type=Path, default=Path("outputs/diffsbdd_crossdocked_gninatypes_audit_v0"))
+    parser.add_argument("--output-dir", type=Path, default=Path("outputs/diffsbdd_crossdocked_gninatypes_audit"))
     parser.add_argument("--max-files", type=int, default=101)
     parser.add_argument("--max-mols-per-file", type=int, default=100)
     parser.add_argument("--workers", type=int, default=24)

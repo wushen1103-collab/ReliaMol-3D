@@ -8,8 +8,8 @@ import pandas as pd
 
 def main() -> None:
     parser = argparse.ArgumentParser()
-    parser.add_argument("--input", default="outputs/real_smoke_crossdocked_v2_logo")
-    parser.add_argument("--output", default="reports/real_smoke_crossdocked_v2_logo_summary.csv")
+    parser.add_argument("--input", default="outputs/real_smoke_crossdocked_logo")
+    parser.add_argument("--output", default="reports/real_smoke_crossdocked_logo_summary.csv")
     args = parser.parse_args()
     root = Path(args.input)
     out = Path(args.output)

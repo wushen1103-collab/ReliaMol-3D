@@ -21,8 +21,8 @@ def summarize_metric_files(root: Path, filename: str, group_cols: list[str], val
 
 def main() -> None:
     parser = argparse.ArgumentParser()
-    parser.add_argument("--input", default="outputs/real_smoke_crossdocked_v2_multiseed")
-    parser.add_argument("--output", default="reports/real_smoke_crossdocked_v2_multiseed_summary.csv")
+    parser.add_argument("--input", default="outputs/real_smoke_crossdocked_multiseed")
+    parser.add_argument("--output", default="reports/real_smoke_crossdocked_multiseed_summary.csv")
     args = parser.parse_args()
     root = Path(args.input)
     out = Path(args.output)

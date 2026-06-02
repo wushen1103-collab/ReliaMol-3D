@@ -325,7 +325,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--dude-root", type=Path, default=Path("/home/test/wsk/external_benchmarks/dude_subset"))
     parser.add_argument("--targets", nargs="+", default=DEFAULT_TARGETS)
     parser.add_argument("--max-per-class", type=int, default=100)
-    parser.add_argument("--output-dir", type=Path, default=Path("outputs/dude_public_pool_v0"))
+    parser.add_argument("--output-dir", type=Path, default=Path("outputs/dude_public_pool"))
     return parser.parse_args()
 
 

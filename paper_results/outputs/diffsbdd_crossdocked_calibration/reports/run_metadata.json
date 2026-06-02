@@ -1,0 +1,7 @@
+{
+  "created_at_utc": "2026-05-07T18:03:09.641346+00:00",
+  "pred_dir": "outputs/diffsbdd_crossdocked_reliamol/reports",
+  "bootstrap": 2000,
+  "topk_frac": 0.1,
+  "baseline_method": "qed_sa"
+}

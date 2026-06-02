@@ -381,7 +381,7 @@ def parse_args() -> argparse.Namespace:
         type=Path,
         default=Path("/home/test/wsk/public_generators/if3_crossdocked2020/selected_pockets/crossdocked_pocket10"),
     )
-    parser.add_argument("--output-dir", type=Path, default=Path("outputs/targetdiff_official_multigen_audit_v0"))
+    parser.add_argument("--output-dir", type=Path, default=Path("outputs/targetdiff_official_multigen_audit"))
     return parser.parse_args()
 
 

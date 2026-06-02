@@ -18,7 +18,7 @@ The proxy experiment uses synthetic/proxy data and does not require molecular fi
 
 ```bash
 python scripts/run_proxy_experiments.py --config configs/proxy.yaml
-python scripts/summarize_outputs.py --input outputs/proxy_v0 --output reports/proxy_v0_summary.csv
+python scripts/summarize_outputs.py --input outputs/proxy --output reports/proxy_summary.csv
 ```
 
 This verifies the Python package, training loop, metrics, and reranking summaries.
@@ -33,12 +33,12 @@ python scripts/audit_diffsbdd_crossdocked_gninatypes.py \
   --archive /path/to/CrossDocked2020_receptors.tgz \
   --index /path/to/tar_index.txt \
   --extract-dir /path/to/selected_receptors \
-  --output-dir outputs/diffsbdd_crossdocked_gninatypes_audit_v0 \
+  --output-dir outputs/diffsbdd_crossdocked_gninatypes_audit \
   --workers 24
 
 python scripts/run_diffsbdd_crossdocked_reliamol.py \
-  --audit-dir outputs/diffsbdd_crossdocked_gninatypes_audit_v0/reports \
-  --output-dir outputs/diffsbdd_crossdocked_reliamol_v0
+  --audit-dir outputs/diffsbdd_crossdocked_gninatypes_audit/reports \
+  --output-dir outputs/diffsbdd_crossdocked_reliamol
 ```
 
 Expected manuscript-level anchors:
@@ -51,21 +51,21 @@ Expected manuscript-level anchors:
 
 ```bash
 python scripts/run_diffsbdd_crossdocked_feature_ablation.py \
-  --feature-frame outputs/diffsbdd_crossdocked_reliamol_v0/reports/feature_frame.csv \
-  --output-dir outputs/diffsbdd_crossdocked_feature_ablation_v0
+  --feature-frame outputs/diffsbdd_crossdocked_reliamol/reports/feature_frame.csv \
+  --output-dir outputs/diffsbdd_crossdocked_feature_ablation
 
 python scripts/run_diffsbdd_crossdocked_extra_baselines.py \
-  --feature-frame outputs/diffsbdd_crossdocked_reliamol_v0/reports/feature_frame.csv \
-  --output-dir outputs/diffsbdd_crossdocked_extra_baselines_v0
+  --feature-frame outputs/diffsbdd_crossdocked_reliamol/reports/feature_frame.csv \
+  --output-dir outputs/diffsbdd_crossdocked_extra_baselines
 
 python scripts/analyze_diffsbdd_crossdocked_calibration.py \
-  --pred-dir outputs/diffsbdd_crossdocked_reliamol_v0/reports \
-  --output-dir outputs/diffsbdd_crossdocked_calibration_v0
+  --pred-dir outputs/diffsbdd_crossdocked_reliamol/reports \
+  --output-dir outputs/diffsbdd_crossdocked_calibration
 
 python scripts/sweep_diffsbdd_crossdocked_thresholds.py \
-  --audit-dir outputs/diffsbdd_crossdocked_gninatypes_audit_v0/reports \
-  --pred-dir outputs/diffsbdd_crossdocked_reliamol_v0/reports \
-  --output-dir outputs/diffsbdd_crossdocked_threshold_sensitivity_v0
+  --audit-dir outputs/diffsbdd_crossdocked_gninatypes_audit/reports \
+  --pred-dir outputs/diffsbdd_crossdocked_reliamol/reports \
+  --output-dir outputs/diffsbdd_crossdocked_threshold_sensitivity
 ```
 
 Expected manuscript-level anchors:
@@ -78,15 +78,15 @@ Expected manuscript-level anchors:
 
 ```bash
 python scripts/run_diffsbdd_crossdocked_posebusters.py \
-  --audit-dir outputs/diffsbdd_crossdocked_gninatypes_audit_v0/reports \
-  --pred-dir outputs/diffsbdd_crossdocked_reliamol_v0/reports \
-  --output-dir outputs/diffsbdd_crossdocked_posebusters_molfast_v0
+  --audit-dir outputs/diffsbdd_crossdocked_gninatypes_audit/reports \
+  --pred-dir outputs/diffsbdd_crossdocked_reliamol/reports \
+  --output-dir outputs/diffsbdd_crossdocked_posebusters_molfast
 
 python scripts/score_diffsbdd_crossdocked_vina_gnina.py \
-  --audit-dir outputs/diffsbdd_crossdocked_gninatypes_audit_v0/reports \
-  --pred-dir outputs/diffsbdd_crossdocked_reliamol_v0/reports \
-  --posebusters-dir outputs/diffsbdd_crossdocked_posebusters_molfast_v0/reports \
-  --output-dir outputs/diffsbdd_crossdocked_vina_gnina_100pocket_v0 \
+  --audit-dir outputs/diffsbdd_crossdocked_gninatypes_audit/reports \
+  --pred-dir outputs/diffsbdd_crossdocked_reliamol/reports \
+  --posebusters-dir outputs/diffsbdd_crossdocked_posebusters_molfast/reports \
+  --output-dir outputs/diffsbdd_crossdocked_vina_gnina_100pocket \
   --vina /path/to/vina \
   --gnina /path/to/gnina
 ```
@@ -102,11 +102,11 @@ Expected manuscript-level anchors:
 python scripts/audit_targetdiff_official_meta.py \
   --input-dir /path/to/targetdiff_sampling_results \
   --pocket-dir /path/to/crossdocked_pocket10 \
-  --output-dir outputs/targetdiff_official_multigen_audit_v0
+  --output-dir outputs/targetdiff_official_multigen_audit
 
 python scripts/run_targetdiff_official_multigen_reliamol.py \
-  --audit-dir outputs/targetdiff_official_multigen_audit_v0/reports \
-  --output-dir outputs/targetdiff_official_multigen_reliamol_v0
+  --audit-dir outputs/targetdiff_official_multigen_audit/reports \
+  --output-dir outputs/targetdiff_official_multigen_reliamol
 ```
 
 Expected manuscript-level anchors:
@@ -120,12 +120,12 @@ Expected manuscript-level anchors:
 ```bash
 python scripts/audit_dude_public_pool.py \
   --dude-root /path/to/dude_subset \
-  --output-dir outputs/dude_public_pool_v0
+  --output-dir outputs/dude_public_pool
 
 python scripts/run_dude_public_reliability.py \
-  --input-root outputs/dude_docking_public6_v0 \
-  --output-dir outputs/dude_public_reliability_external_ood_20260522 \
-  --seeds 20260522 20260523 20260524
+  --input-root outputs/dude_docking_public6 \
+  --output-dir outputs/dude_public_reliability_external_ood \
+  --seeds 42 43 44
 ```
 
 Expected manuscript-level anchors:

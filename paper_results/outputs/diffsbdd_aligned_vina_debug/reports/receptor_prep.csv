@@ -1,2 +1,0 @@
-pocket_id,pdb_id,chain_id,receptor_pdbqt,receptor_prep_backend
-1afs-A-rec-1afs-tes-lig-tt-min-0-pocket10_1afs-A-rec-1afs-tes-lig-tt-min-0,1afs,A,outputs/diffsbdd_aligned_vina_debug/work/receptors/1afs-A-rec-1afs-tes-lig-tt-min-0-pocket10_1afs-A-rec-1afs-tes-lig-tt-min-0/receptor.pdbqt,meeko

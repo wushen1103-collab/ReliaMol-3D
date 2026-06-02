@@ -1,7 +1,5 @@
 # DiffSBDD CrossDocked Evidence Note
 
-Date: 2026-05-08
-
 ## Scope
 
 This note separates three evidence layers that should not be conflated in the manuscript.

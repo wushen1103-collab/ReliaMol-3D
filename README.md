@@ -61,36 +61,36 @@ python scripts/audit_diffsbdd_crossdocked_gninatypes.py \
   --archive /path/to/CrossDocked2020_receptors.tgz \
   --index /path/to/tar_index.txt \
   --extract-dir /path/to/selected_receptors \
-  --output-dir outputs/diffsbdd_crossdocked_gninatypes_audit_v0
+  --output-dir outputs/diffsbdd_crossdocked_gninatypes_audit
 
 # 2. Main ReliaMol reranking on DiffSBDD exact-CrossDocked candidates
 python scripts/run_diffsbdd_crossdocked_reliamol.py \
-  --audit-dir outputs/diffsbdd_crossdocked_gninatypes_audit_v0/reports \
-  --output-dir outputs/diffsbdd_crossdocked_reliamol_v0
+  --audit-dir outputs/diffsbdd_crossdocked_gninatypes_audit/reports \
+  --output-dir outputs/diffsbdd_crossdocked_reliamol
 
 # 3. Feature-group ablation
 python scripts/run_diffsbdd_crossdocked_feature_ablation.py \
-  --feature-frame outputs/diffsbdd_crossdocked_reliamol_v0/reports/feature_frame.csv \
-  --output-dir outputs/diffsbdd_crossdocked_feature_ablation_v0
+  --feature-frame outputs/diffsbdd_crossdocked_reliamol/reports/feature_frame.csv \
+  --output-dir outputs/diffsbdd_crossdocked_feature_ablation
 
 # 4. Threshold sensitivity
 python scripts/sweep_diffsbdd_crossdocked_thresholds.py \
-  --audit-dir outputs/diffsbdd_crossdocked_gninatypes_audit_v0/reports \
-  --pred-dir outputs/diffsbdd_crossdocked_reliamol_v0/reports \
-  --output-dir outputs/diffsbdd_crossdocked_threshold_sensitivity_v0
+  --audit-dir outputs/diffsbdd_crossdocked_gninatypes_audit/reports \
+  --pred-dir outputs/diffsbdd_crossdocked_reliamol/reports \
+  --output-dir outputs/diffsbdd_crossdocked_threshold_sensitivity
 
 # 5. PoseBusters gate
 python scripts/run_diffsbdd_crossdocked_posebusters.py \
-  --audit-dir outputs/diffsbdd_crossdocked_gninatypes_audit_v0/reports \
-  --pred-dir outputs/diffsbdd_crossdocked_reliamol_v0/reports \
-  --output-dir outputs/diffsbdd_crossdocked_posebusters_molfast_v0
+  --audit-dir outputs/diffsbdd_crossdocked_gninatypes_audit/reports \
+  --pred-dir outputs/diffsbdd_crossdocked_reliamol/reports \
+  --output-dir outputs/diffsbdd_crossdocked_posebusters_molfast
 
 # 6. Vina/GNINA score-only and ensemble baselines
 python scripts/score_diffsbdd_crossdocked_vina_gnina.py \
-  --audit-dir outputs/diffsbdd_crossdocked_gninatypes_audit_v0/reports \
-  --pred-dir outputs/diffsbdd_crossdocked_reliamol_v0/reports \
-  --posebusters-dir outputs/diffsbdd_crossdocked_posebusters_molfast_v0/reports \
-  --output-dir outputs/diffsbdd_crossdocked_vina_gnina_100pocket_v0 \
+  --audit-dir outputs/diffsbdd_crossdocked_gninatypes_audit/reports \
+  --pred-dir outputs/diffsbdd_crossdocked_reliamol/reports \
+  --posebusters-dir outputs/diffsbdd_crossdocked_posebusters_molfast/reports \
+  --output-dir outputs/diffsbdd_crossdocked_vina_gnina_100pocket \
   --vina /path/to/vina \
   --gnina /path/to/gnina
 
@@ -98,20 +98,20 @@ python scripts/score_diffsbdd_crossdocked_vina_gnina.py \
 python scripts/audit_targetdiff_official_meta.py \
   --input-dir /path/to/targetdiff_sampling_results \
   --pocket-dir /path/to/crossdocked_pocket10 \
-  --output-dir outputs/targetdiff_official_multigen_audit_v0
+  --output-dir outputs/targetdiff_official_multigen_audit
 
 python scripts/run_targetdiff_official_multigen_reliamol.py \
-  --audit-dir outputs/targetdiff_official_multigen_audit_v0/reports \
-  --output-dir outputs/targetdiff_official_multigen_reliamol_v0
+  --audit-dir outputs/targetdiff_official_multigen_audit/reports \
+  --output-dir outputs/targetdiff_official_multigen_reliamol
 
 # 8. DUD-E controlled-failure external stress test
 python scripts/audit_dude_public_pool.py \
   --dude-root /path/to/dude_subset \
-  --output-dir outputs/dude_public_pool_v0
+  --output-dir outputs/dude_public_pool
 
 python scripts/run_dude_public_reliability.py \
-  --input-root outputs/dude_docking_public6_v0 \
-  --output-dir outputs/dude_public_reliability_external_ood_20260522
+  --input-root outputs/dude_docking_public6 \
+  --output-dir outputs/dude_public_reliability_external_ood
 ```
 
 ## Included Results

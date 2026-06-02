@@ -193,9 +193,9 @@ def summarize_posebusters(pb: pd.DataFrame, args: argparse.Namespace, report_dir
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Run PoseBusters molecule validity checks on DiffSBDD CrossDocked generated candidates.")
-    parser.add_argument("--audit-dir", type=Path, default=Path("outputs/diffsbdd_crossdocked_gninatypes_audit_v0/reports"))
-    parser.add_argument("--pred-dir", type=Path, default=Path("outputs/diffsbdd_crossdocked_reliamol_v0/reports"))
-    parser.add_argument("--output-dir", type=Path, default=Path("outputs/diffsbdd_crossdocked_posebusters_molfast_v0"))
+    parser.add_argument("--audit-dir", type=Path, default=Path("outputs/diffsbdd_crossdocked_gninatypes_audit/reports"))
+    parser.add_argument("--pred-dir", type=Path, default=Path("outputs/diffsbdd_crossdocked_reliamol/reports"))
+    parser.add_argument("--output-dir", type=Path, default=Path("outputs/diffsbdd_crossdocked_posebusters_molfast"))
     parser.add_argument("--config", default="mol_fast")
     parser.add_argument("--workers", type=int, default=16)
     parser.add_argument("--topk-fracs", nargs="+", type=float, default=[0.1, 0.2, 0.5])

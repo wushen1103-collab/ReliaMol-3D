@@ -101,7 +101,7 @@ def analyze_seed(pred: pd.DataFrame, seed: int, args: argparse.Namespace) -> tup
         top = per_pocket_topk(pred, col, args.topk_frac)
         top_frames[method] = top
     sig_rows = []
-    rng = np.random.default_rng(seed + 20260508)
+    rng = np.random.default_rng(seed + 43)
     if args.baseline_method in top_frames:
         base = top_frames[args.baseline_method]
         for method, top in top_frames.items():
@@ -115,8 +115,8 @@ def analyze_seed(pred: pd.DataFrame, seed: int, args: argparse.Namespace) -> tup
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Calibration and top-k significance analysis for CrossDocked DiffSBDD reranking.")
-    parser.add_argument("--pred-dir", type=Path, default=Path("outputs/diffsbdd_crossdocked_reliamol_v0/reports"))
-    parser.add_argument("--output-dir", type=Path, default=Path("outputs/diffsbdd_crossdocked_calibration_v0"))
+    parser.add_argument("--pred-dir", type=Path, default=Path("outputs/diffsbdd_crossdocked_reliamol/reports"))
+    parser.add_argument("--output-dir", type=Path, default=Path("outputs/diffsbdd_crossdocked_calibration"))
     parser.add_argument("--bins", type=int, default=10)
     parser.add_argument("--topk-frac", type=float, default=0.1)
     parser.add_argument("--baseline-method", default="qed_sa")

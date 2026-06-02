@@ -1,7 +1,7 @@
 experiment:
-  name: crossdocked_tensor_real_smoke_v2
-  output_dir: outputs/real_smoke_crossdocked_v2
-  seed: 20260505
+  name: crossdocked_tensor_real_smoke
+  output_dir: outputs/real_smoke_crossdocked
+  seed: 42
 data:
   zip_path: /home/test/wsk/TASC-VS/data/crossdocked2020/crossdocked.zip
   train_pockets: 900

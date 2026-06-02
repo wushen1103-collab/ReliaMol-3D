@@ -165,8 +165,8 @@ def summarize(metrics: pd.DataFrame, rerank: pd.DataFrame, output_dir: Path) -> 
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Run extra baselines for DiffSBDD CrossDocked ReliaMol reranking.")
-    parser.add_argument("--feature-frame", type=Path, default=Path("outputs/diffsbdd_crossdocked_reliamol_v0/reports/feature_frame.csv"))
-    parser.add_argument("--output-dir", type=Path, default=Path("outputs/diffsbdd_crossdocked_extra_baselines_v0"))
+    parser.add_argument("--feature-frame", type=Path, default=Path("outputs/diffsbdd_crossdocked_reliamol/reports/feature_frame.csv"))
+    parser.add_argument("--output-dir", type=Path, default=Path("outputs/diffsbdd_crossdocked_extra_baselines"))
     parser.add_argument("--seeds", nargs="+", type=int, default=[11, 22, 33])
     parser.add_argument("--n-folds", type=int, default=5)
     parser.add_argument("--topk-fracs", nargs="+", type=float, default=[0.1, 0.2, 0.5])

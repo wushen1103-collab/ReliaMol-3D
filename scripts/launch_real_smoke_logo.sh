@@ -12,8 +12,8 @@ PYTHON="${PYTHON:-$ROOT/.conda_env/bin/python}"
 GPUS="${GPUS:-0,1,2,3}"
 IFS=',' read -ra GPU_LIST <<< "$GPUS"
 GENERATORS=(NativeNear DriftGen ClashGen ScoreHackGen)
-CANDIDATES="${CANDIDATES:-outputs/real_smoke_crossdocked_v2/candidate_labels.csv}"
-OUT_ROOT="${OUT_ROOT:-outputs/real_smoke_crossdocked_v2_logo}"
+CANDIDATES="${CANDIDATES:-outputs/real_smoke_crossdocked/candidate_labels.csv}"
+OUT_ROOT="${OUT_ROOT:-outputs/real_smoke_crossdocked_logo}"
 
 mkdir -p logs "$OUT_ROOT" reports
 
@@ -30,9 +30,9 @@ for generator in "${GENERATORS[@]}"; do
 done
 
 wait
-"$PYTHON" scripts/summarize_logo.py --input "$OUT_ROOT" --output reports/real_smoke_crossdocked_v2_logo_summary.csv
+"$PYTHON" scripts/summarize_logo.py --input "$OUT_ROOT" --output reports/real_smoke_crossdocked_logo_summary.csv
 
-MIXED_OUT_ROOT="${MIXED_OUT_ROOT:-outputs/real_smoke_crossdocked_v2_logo_mixed_native}"
+MIXED_OUT_ROOT="${MIXED_OUT_ROOT:-outputs/real_smoke_crossdocked_logo_mixed_native}"
 mkdir -p "$MIXED_OUT_ROOT"
 MIXED_GENERATORS=(DriftGen ClashGen ScoreHackGen)
 
@@ -50,4 +50,4 @@ for generator in "${MIXED_GENERATORS[@]}"; do
 done
 
 wait
-"$PYTHON" scripts/summarize_logo.py --input "$MIXED_OUT_ROOT" --output reports/real_smoke_crossdocked_v2_logo_mixed_native_summary.csv
+"$PYTHON" scripts/summarize_logo.py --input "$MIXED_OUT_ROOT" --output reports/real_smoke_crossdocked_logo_mixed_native_summary.csv

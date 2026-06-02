@@ -259,9 +259,9 @@ def summarize(results: pd.DataFrame, topk_fracs: list[float]) -> tuple[pd.DataFr
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Vina score-only check for aligned official DiffSBDD public samples.")
-    parser.add_argument("--audit-dir", type=Path, default=Path("outputs/diffsbdd_public_audit_v0/reports"))
+    parser.add_argument("--audit-dir", type=Path, default=Path("outputs/diffsbdd_public_audit/reports"))
     parser.add_argument("--pdb-cache", type=Path, default=Path("/home/test/wsk/public_generators/rcsb_pdb_cache"))
-    parser.add_argument("--output-dir", type=Path, default=Path("outputs/diffsbdd_aligned_vina_v0"))
+    parser.add_argument("--output-dir", type=Path, default=Path("outputs/diffsbdd_aligned_vina"))
     parser.add_argument("--max-pockets", type=int, default=39)
     parser.add_argument("--max-mols-per-pocket", type=int, default=100)
     parser.add_argument("--workers", type=int, default=32)

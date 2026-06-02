@@ -78,6 +78,6 @@ This experiment directly addresses the top-journal concern that ReliaMol might o
 
 Artifacts:
 
-- Audit: `outputs/targetdiff_official_multigen_audit_v0/reports/`
-- ReliaMol experiment: `outputs/targetdiff_official_multigen_reliamol_v0/reports/`
-- Main generated report: `outputs/targetdiff_official_multigen_reliamol_v0/reports/official_multigen_report.md`
+- Audit: `outputs/targetdiff_official_multigen_audit/reports/`
+- ReliaMol experiment: `outputs/targetdiff_official_multigen_reliamol/reports/`
+- Main generated report: `outputs/targetdiff_official_multigen_reliamol/reports/official_multigen_report.md`

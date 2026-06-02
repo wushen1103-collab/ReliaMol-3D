@@ -1,22 +1,20 @@
 # Top-Journal Experiment Gap-Fill Pack
 
-Date: 2026-05-08
-
 This note summarizes the experiments added after the IF/TNNLS/TKDE/TPAMI-style reviewer gap analysis. The goal is to strengthen the existing DiffSBDD exact-CrossDocked evidence without mixing it with unrelated or inaccessible generator data.
 
 ## Completed Additions
 
 | Reviewer concern | Added experiment | Output |
 |---|---|---|
-| Reliability labels may depend on arbitrary geometry thresholds | Exact-receptor label threshold sweep over ligand atom mode, contact threshold, clash threshold, and internal-close threshold | `outputs/diffsbdd_crossdocked_threshold_sensitivity_v0/reports/` |
-| Generated molecules may fail standard physical validity checks | PoseBusters `mol_fast` audit on all 10,000 DiffSBDD molecules | `outputs/diffsbdd_crossdocked_posebusters_molfast_v0/reports/` |
+| Reliability labels may depend on arbitrary geometry thresholds | Exact-receptor label threshold sweep over ligand atom mode, contact threshold, clash threshold, and internal-close threshold | `outputs/diffsbdd_crossdocked_threshold_sensitivity/reports/` |
+| Generated molecules may fail standard physical validity checks | PoseBusters `mol_fast` audit on all 10,000 DiffSBDD molecules | `outputs/diffsbdd_crossdocked_posebusters_molfast/reports/` |
 | PoseBusters and receptor-reliability should both be satisfied | PoseBusters-gated reranking analysis | `posebusters_gated_reranking_summary.csv` |
-| Method may only beat weak QED/SA baselines | Linear, unsupervised, rule-based, and audit-upper-bound baselines | `outputs/diffsbdd_crossdocked_extra_baselines_v0/reports/` |
-| Scores may be poorly calibrated or not statistically different | Brier/calibration bins and pocket-bootstrap top-k delta vs QED/SA | `outputs/diffsbdd_crossdocked_calibration_v0/reports/` |
-| Model may be sensitive to pocket radius | Fast sensitivity reruns at pocket radii 8, 10, 12, and 16 A | `outputs/diffsbdd_crossdocked_reliamol_radius*_v0/reports/` |
-| Model may need too much training data | Fast sensitivity reruns using 25% and 50% of training pockets | `outputs/diffsbdd_crossdocked_reliamol_lowdata*_v0/reports/` |
+| Method may only beat weak QED/SA baselines | Linear, unsupervised, rule-based, and audit-upper-bound baselines | `outputs/diffsbdd_crossdocked_extra_baselines/reports/` |
+| Scores may be poorly calibrated or not statistically different | Brier/calibration bins and pocket-bootstrap top-k delta vs QED/SA | `outputs/diffsbdd_crossdocked_calibration/reports/` |
+| Model may be sensitive to pocket radius | Fast sensitivity reruns at pocket radii 8, 10, 12, and 16 A | `outputs/diffsbdd_crossdocked_reliamol_radius*/reports/` |
+| Model may need too much training data | Fast sensitivity reruns using 25% and 50% of training pockets | `outputs/diffsbdd_crossdocked_reliamol_lowdata*/reports/` |
 | Multi-generator generalization is expected | Public source availability audit for TargetDiff/Pocket2Mol/DecompDiff data | `reports/public_multigenerator_availability.md` |
-| Same-population docking/scoring baseline is expected | 100-pocket exact CrossDocked Vina and GNINA/CNN score-only baselines | `outputs/diffsbdd_crossdocked_vina_gnina_100pocket_v0/reports/` |
+| Same-population docking/scoring baseline is expected | 100-pocket exact CrossDocked Vina and GNINA/CNN score-only baselines | `outputs/diffsbdd_crossdocked_vina_gnina_100pocket/reports/` |
 
 ## Main Exact-CrossDocked Result
 

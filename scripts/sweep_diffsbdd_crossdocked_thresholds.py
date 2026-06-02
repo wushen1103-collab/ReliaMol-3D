@@ -342,9 +342,9 @@ def write_report(report_dir: Path) -> None:
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Sweep CrossDocked DiffSBDD reliability-label thresholds and reevaluate reranking scores.")
-    parser.add_argument("--audit-dir", type=Path, default=Path("outputs/diffsbdd_crossdocked_gninatypes_audit_v0/reports"))
-    parser.add_argument("--pred-dir", type=Path, default=Path("outputs/diffsbdd_crossdocked_reliamol_v0/reports"))
-    parser.add_argument("--output-dir", type=Path, default=Path("outputs/diffsbdd_crossdocked_threshold_sensitivity_v0"))
+    parser.add_argument("--audit-dir", type=Path, default=Path("outputs/diffsbdd_crossdocked_gninatypes_audit/reports"))
+    parser.add_argument("--pred-dir", type=Path, default=Path("outputs/diffsbdd_crossdocked_reliamol/reports"))
+    parser.add_argument("--output-dir", type=Path, default=Path("outputs/diffsbdd_crossdocked_threshold_sensitivity"))
     parser.add_argument("--ligand-atom-modes", nargs="+", default=["all", "heavy"], choices=["all", "heavy"])
     parser.add_argument("--contact-thresholds", nargs="+", type=float, default=[4.0, 4.5, 5.0])
     parser.add_argument("--clash-thresholds", nargs="+", type=float, default=[1.0, 1.2, 1.5])

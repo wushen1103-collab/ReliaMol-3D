@@ -311,7 +311,7 @@ def run_coordinate_noise(base: pd.DataFrame, sigmas: list[float], seeds: list[in
     rows = []
     features = feature_columns("reliamol_novinascore")
     for sigma in sigmas:
-        pert = recompute_pose_frame(base, sigma=sigma, mode=mode, seed=20260522 + int(round(sigma * 1000)), pocket_radius=pocket_radius, root=root)
+        pert = recompute_pose_frame(base, sigma=sigma, mode=mode, seed=42 + int(round(sigma * 1000)), pocket_radius=pocket_radius, root=root)
         for seed in seeds:
             pockets = base["pocket_id"].drop_duplicates().to_numpy()
             folds = fold_pockets(pockets, 5, seed)
@@ -393,8 +393,8 @@ def make_report(report_dir: Path, drug_summary: pd.DataFrame, coord_summary: pd.
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Top-journal drug-discovery alignment audits for ReliaMol-3D.")
-    parser.add_argument("--pred-dir", type=Path, default=Path("outputs/diffsbdd_crossdocked_reliamol_v0/reports"))
-    parser.add_argument("--output-dir", type=Path, default=Path("outputs/diffsbdd_crossdocked_drug_alignment_v0"))
+    parser.add_argument("--pred-dir", type=Path, default=Path("outputs/diffsbdd_crossdocked_reliamol/reports"))
+    parser.add_argument("--output-dir", type=Path, default=Path("outputs/diffsbdd_crossdocked_drug_alignment"))
     parser.add_argument("--seeds", nargs="+", type=int, default=[11, 22, 33])
     parser.add_argument("--topk-fracs", nargs="+", type=float, default=[0.1, 0.2, 0.5])
     parser.add_argument("--noise-sigmas", nargs="+", type=float, default=[0.0, 0.1, 0.25, 0.5])

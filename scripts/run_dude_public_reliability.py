@@ -573,9 +573,9 @@ def summarize(metrics: pd.DataFrame, reranking: pd.DataFrame, failures: pd.DataF
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Build and evaluate a public DUD-E controlled-failure reliability benchmark.")
-    parser.add_argument("--input-root", type=Path, default=Path("outputs/dude_docking_public6_v0"))
-    parser.add_argument("--output-dir", type=Path, default=Path("outputs/dude_public_reliability_v0"))
-    parser.add_argument("--seeds", nargs="+", type=int, default=[20260507])
+    parser.add_argument("--input-root", type=Path, default=Path("outputs/dude_docking_public6"))
+    parser.add_argument("--output-dir", type=Path, default=Path("outputs/dude_public_reliability"))
+    parser.add_argument("--seeds", nargs="+", type=int, default=[42])
     parser.add_argument("--epochs", type=int, default=80)
     parser.add_argument("--hidden-dim", type=int, default=128)
     parser.add_argument("--dropout", type=float, default=0.10)

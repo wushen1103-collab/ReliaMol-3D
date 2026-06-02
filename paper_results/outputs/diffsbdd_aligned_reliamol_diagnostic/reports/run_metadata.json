@@ -1,0 +1,8 @@
+{
+  "created_at_utc": "2026-05-07T15:33:04.816400+00:00",
+  "vina_dir": "outputs/diffsbdd_aligned_vina/reports",
+  "n_candidates": 3862,
+  "n_pockets": 39,
+  "positive_rate": 0.940704298291041,
+  "feature_note": "No direct audit threshold flags are used as features; pocket distances use a fixed public-PDB pocket around the median generated center."
+}

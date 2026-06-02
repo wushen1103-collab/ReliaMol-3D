@@ -405,8 +405,8 @@ def summarize(metrics: pd.DataFrame, rerank: pd.DataFrame, output_dir: Path) -> 
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="ReliaMol reranking on official DiffSBDD samples with CrossDocked gninatypes receptors.")
-    parser.add_argument("--audit-dir", type=Path, default=Path("outputs/diffsbdd_crossdocked_gninatypes_audit_v0/reports"))
-    parser.add_argument("--output-dir", type=Path, default=Path("outputs/diffsbdd_crossdocked_reliamol_v0"))
+    parser.add_argument("--audit-dir", type=Path, default=Path("outputs/diffsbdd_crossdocked_gninatypes_audit/reports"))
+    parser.add_argument("--output-dir", type=Path, default=Path("outputs/diffsbdd_crossdocked_reliamol"))
     parser.add_argument("--seeds", nargs="+", type=int, default=[11, 22, 33])
     parser.add_argument("--n-folds", type=int, default=5)
     parser.add_argument("--topk-fracs", nargs="+", type=float, default=[0.1, 0.2, 0.5])

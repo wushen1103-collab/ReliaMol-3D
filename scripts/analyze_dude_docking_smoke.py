@@ -167,8 +167,8 @@ def write_report(path: Path, by_class: pd.DataFrame, separation: pd.DataFrame, t
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Analyze public DUD-E docking smoke outputs.")
-    parser.add_argument("--results", type=Path, default=Path("outputs/dude_docking_smoke_v0/reports/docking_results.csv"))
-    parser.add_argument("--output-dir", type=Path, default=Path("outputs/dude_docking_smoke_v0/reports"))
+    parser.add_argument("--results", type=Path, default=Path("outputs/dude_docking_smoke/reports/docking_results.csv"))
+    parser.add_argument("--output-dir", type=Path, default=Path("outputs/dude_docking_smoke/reports"))
     return parser.parse_args()
 
 

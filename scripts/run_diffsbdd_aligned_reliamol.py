@@ -451,9 +451,9 @@ def summarize(metrics: pd.DataFrame, rerank: pd.DataFrame, output_dir: Path) -> 
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="ReliaMol reranking on aligned official DiffSBDD public samples.")
-    parser.add_argument("--vina-dir", type=Path, default=Path("outputs/diffsbdd_aligned_vina_v0/reports"))
+    parser.add_argument("--vina-dir", type=Path, default=Path("outputs/diffsbdd_aligned_vina/reports"))
     parser.add_argument("--pdb-cache", type=Path, default=Path("/home/test/wsk/public_generators/rcsb_pdb_cache"))
-    parser.add_argument("--output-dir", type=Path, default=Path("outputs/diffsbdd_aligned_reliamol_v0"))
+    parser.add_argument("--output-dir", type=Path, default=Path("outputs/diffsbdd_aligned_reliamol"))
     parser.add_argument("--seeds", nargs="+", type=int, default=[11, 22, 33])
     parser.add_argument("--n-folds", type=int, default=5)
     parser.add_argument("--topk-fracs", nargs="+", type=float, default=[0.1, 0.2, 0.5])

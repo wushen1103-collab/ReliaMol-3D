@@ -1,6 +1,6 @@
 # Experiment Log
 
-## 2026-05-05: CrossDocked Tensor Real Smoke v1
+## CrossDocked Tensor Real Smoke initial
 
 Remote path: `/home/test/wsk/16ReliaMol-3D`
 
@@ -73,12 +73,12 @@ Next technical step:
 3. Add real generated candidates from open-source generators or existing generated PDBQT/SDF pools.
 4. Replace current synthetic/chemical proxies with RDKit/PoseBusters/AiZynthFinder-compatible labels when raw molecules are available.
 
-## 2026-05-05: CrossDocked Tensor Real Smoke v2, No-Leak Feature Variants
+## CrossDocked Tensor Real Smoke updated, No-Leak Feature Variants
 
 Reason:
 
-- v1 proved the end-to-end real-coordinate pipeline, but RF/HGB and MLP were nearly perfect because direct rule features leaked the label definition.
-- v2 separates feature variants so the main result can distinguish genuine interaction/geometry signal from direct rule recovery.
+- the initial run proved the end-to-end real-coordinate pipeline, but RF/HGB and MLP were nearly perfect because direct rule features leaked the label definition.
+- the updated run separates feature variants so the main result can distinguish genuine interaction/geometry signal from direct rule recovery.
 
 Feature variants:
 
@@ -136,11 +136,11 @@ Interpretation:
 
 Next step:
 
-- Run multi-seed v2 to confirm stability.
+- Run multi-seed updated run to confirm stability.
 - Add leave-one-generator-out evaluation on the four perturbation families.
 - Start attaching raw generated molecule pools so chemical/synthetic failures are not proxy-only.
 
-## 2026-05-05: CrossDocked Tensor Real Smoke v2 Multi-Seed
+## CrossDocked Tensor Real Smoke updated Multi-Seed
 
 Seeds:
 
@@ -186,11 +186,11 @@ Next step:
 - Add leave-one-generator-out split on `NativeNear`, `DriftGen`, `ClashGen`, and `ScoreHackGen`.
 - Then attach raw generated pools with RDKit/PoseBusters labels.
 
-## 2026-05-05: Leave-One-Generator-Out Smoke
+## Leave-One-Generator-Out Smoke
 
 Setup:
 
-- Candidate labels are reused from CrossDocked tensor smoke v2.
+- Candidate labels are reused from CrossDocked tensor smoke updated run.
 - Training uses train+val pockets while removing the held-out generator.
 - Test initially uses only the held-out generator on test pockets.
 
@@ -247,7 +247,7 @@ Next step:
 
 - Attach raw generated molecules/poses from existing pools or run a small open-source generator reproduction.
 - Prioritize obtaining SDF/PDBQT plus receptor assets so RDKit, PoseBusters, and Vina/GNINA labels can replace proxy labels.
-## 2026-05-05: Excluded Internal Unpublished Assets
+## Excluded Internal Unpublished Assets
 
 Integrity note:
 
@@ -261,7 +261,7 @@ Next step:
 - Use only public, separately citable, or newly generated SBDD candidate pools for the next real-file benchmark.
 - Candidate directions: CrossDocked-derived raw molecule/pose exports, or public Pocket2Mol/TargetDiff/DiffSBDD/DecompDiff outputs regenerated specifically for this paper.
 
-## 2026-05-07: Public DUD-E Real-File Audit and Vina Docking Smoke
+## Public DUD-E Real-File Audit and Vina Docking Smoke
 
 Integrity boundary:
 
@@ -294,9 +294,9 @@ Docking smoke setup:
   - The script writes temporary fixed PDB files.
   - Meeko is attempted first; Open Babel receptor PDBQT fallback is used when Meeko rejects protein connectivity.
 - Output:
-  - `outputs/dude_docking_public6_v0/reports/docking_results.csv`
-  - `outputs/dude_docking_public6_v0/reports/docking_analysis.md`
-  - `outputs/dude_docking_public6_v0/reports/docking_reliability_labels.csv`
+  - `outputs/dude_docking_public6/reports/docking_results.csv`
+  - `outputs/dude_docking_public6/reports/docking_analysis.md`
+  - `outputs/dude_docking_public6/reports/docking_reliability_labels.csv`
 
 Pose quality:
 
@@ -344,7 +344,7 @@ Next step:
 - Run leave-one-target validation so the model is not just learning target-specific docking geometry.
 - Keep the public DUD-E route separate from any unpublished internal assets.
 
-## 2026-05-07: Public DUD-E Controlled-Failure Reliability v2
+## Public DUD-E Controlled-Failure Reliability updated run
 
 Purpose:
 
@@ -360,19 +360,19 @@ Purpose:
 
 Leakage correction:
 
-- v1 included paired `native_vina_score` and `vina_delta_from_native` in model features.
-- That pairing would not exist for arbitrary generated candidates, so v2 removes both from all model feature sets.
-- v2 model score features use only each candidate's own `vina_score`.
+- the initial run included paired `native_vina_score` and `vina_delta_from_native` in model features.
+- That pairing would not exist for arbitrary generated candidates, so the updated run removes both from all model feature sets.
+- the updated model score features use only each candidate's own `vina_score`.
 
 Setup:
 
-- Input: `outputs/dude_docking_public6_v0`
-- Output: `outputs/dude_public_reliability_v2_multiseed`
+- Input: `outputs/dude_docking_public6`
+- Output: `outputs/dude_public_reliability_multiseed`
 - Public targets: `adrb2`, `bace1`, `cp3a4`, `pparg`, `src`, `try1`
 - Base docked poses: 359 successful public docked poses.
 - Controlled candidate rows: 2154.
 - Evaluation: leave-one-target validation.
-- Seeds: `20260507`, `20260508`, `20260509`.
+- Seeds: `42`, `43`, `44`.
 - Main script: `scripts/run_dude_public_reliability.py`
 
 Variant label summary:
@@ -440,9 +440,9 @@ Next step:
 
 - Add one more validation layer with real generated public candidates from Pocket2Mol/TargetDiff/DiffSBDD/DecompDiff, or regenerate a small public pool specifically for this paper.
 - Add a stricter scoring-failure variant based on real redocking/rescoring disagreement rather than the current controlled score hack.
-- Keep the v2 results as the clean public controlled-failure ablation table.
+- Keep the updated results as the clean public controlled-failure ablation table.
 
-## 2026-05-07: Official DiffSBDD Public Generated Sample Audit
+## Official DiffSBDD Public Generated Sample Audit
 
 Purpose:
 
@@ -513,7 +513,7 @@ Next step:
 - Until then, use the 39 aligned public-PDB pockets as a conservative real generated SDF audit subset.
 - Add Vina/PoseBusters-style checks on the aligned subset before claiming real generated benchmark performance.
 
-## 2026-05-07: DiffSBDD Aligned Public-PDB Vina Score-Only Check
+## DiffSBDD Aligned Public-PDB Vina Score-Only Check
 
 Purpose:
 
@@ -532,14 +532,14 @@ Command:
   --max-pockets 39 \
   --max-mols-per-pocket 100 \
   --workers 96 \
-  --output-dir outputs/diffsbdd_aligned_vina_v0
+  --output-dir outputs/diffsbdd_aligned_vina
 ```
 
 Outputs:
 
-- `outputs/diffsbdd_aligned_vina_v0/reports/vina_score_summary.csv`
-- `outputs/diffsbdd_aligned_vina_v0/reports/vina_reranking_summary.csv`
-- `outputs/diffsbdd_aligned_vina_v0/reports/vina_diagnostic_report.md`
+- `outputs/diffsbdd_aligned_vina/reports/vina_score_summary.csv`
+- `outputs/diffsbdd_aligned_vina/reports/vina_reranking_summary.csv`
+- `outputs/diffsbdd_aligned_vina/reports/vina_diagnostic_report.md`
 
 Overall:
 
@@ -585,7 +585,7 @@ Next step:
 - Add a ReliaMol ranking pass on the same 39 aligned pockets and compare top-k reliability against Vina.
 - Continue searching for exact CrossDocked receptor assets; if found, rerun the audit without the public-PDB alignment filter.
 
-## 2026-05-07: DiffSBDD Aligned Public-PDB ReliaMol Reranking
+## DiffSBDD Aligned Public-PDB ReliaMol Reranking
 
 Purpose:
 
@@ -607,12 +607,12 @@ CUDA_VISIBLE_DEVICES=2 /home/test/miniconda3/envs/genmol-eval2/bin/python script
   --rf-trees 260 \
   --hgb-iter 220 \
   --rf-jobs 16 \
-  --output-dir outputs/diffsbdd_aligned_reliamol_v0
+  --output-dir outputs/diffsbdd_aligned_reliamol
 ```
 
 Setup:
 
-- Input: `outputs/diffsbdd_aligned_vina_v0/reports/vina_score_results.csv`
+- Input: `outputs/diffsbdd_aligned_vina/reports/vina_score_results.csv`
 - Vina-success candidates: 3,862
 - Pockets: 39
 - Success-only reliable proxy rate: 0.9407
@@ -647,7 +647,7 @@ Next step:
 - Continue searching for exact CrossDocked prepared receptor assets to remove the current alignment filter.
 - Once exact receptors are available, rerun both DiffSBDD audit and ReliaMol/Vina reranking on all usable official samples.
 
-## 2026-05-07: DiffSBDD Aligned ReliaMol Pocket-Radius Sensitivity
+## DiffSBDD Aligned ReliaMol Pocket-Radius Sensitivity
 
 Purpose:
 
@@ -696,7 +696,7 @@ Next step:
 - Search for exact CrossDocked prepared receptor files or a reproducible reconstruction path.
 - If unavailable, report the 39-pocket public-PDB aligned result transparently and avoid all-pocket claims.
 
-## 2026-05-08: DiffSBDD CrossDocked Receptor Gninatypes Audit
+## DiffSBDD CrossDocked Receptor Gninatypes Audit
 
 Purpose:
 
@@ -731,7 +731,7 @@ Command:
   --max-files 101 \
   --max-mols-per-file 100 \
   --workers 32 \
-  --output-dir outputs/diffsbdd_crossdocked_gninatypes_audit_v0
+  --output-dir outputs/diffsbdd_crossdocked_gninatypes_audit
 ```
 
 Overall comparison:
@@ -768,7 +768,7 @@ Next step:
 - Keep Vina score-only as a 39-pocket public-PDB/PDBQT baseline unless a Vina-ready exact CrossDocked receptor format is recovered.
 - If a PDB/PDBQT version of the exact CrossDocked receptors becomes available, rerun Vina and ReliaMol on the same 100-pocket exact receptor set.
 
-## 2026-05-08: DiffSBDD CrossDocked 100-Pocket ReliaMol Reranking
+## DiffSBDD CrossDocked 100-Pocket ReliaMol Reranking
 
 Purpose:
 
@@ -791,12 +791,12 @@ CUDA_VISIBLE_DEVICES=2 /home/test/miniconda3/envs/genmol-eval2/bin/python script
   --rf-trees 260 \
   --hgb-iter 220 \
   --rf-jobs 16 \
-  --output-dir outputs/diffsbdd_crossdocked_reliamol_v0
+  --output-dir outputs/diffsbdd_crossdocked_reliamol
 ```
 
 Setup:
 
-- Input audit: `outputs/diffsbdd_crossdocked_gninatypes_audit_v0/reports/candidate_audit.csv`
+- Input audit: `outputs/diffsbdd_crossdocked_gninatypes_audit/reports/candidate_audit.csv`
 - Candidates: 10,000
 - Pockets: 100
 - Reliable proxy rate before reranking: 0.9304

@@ -11,7 +11,7 @@
 
 TargetDiff official README states that docked meta files are provided for TargetDiff, CVAE, AR, and Pocket2Mol via the sampling-results Google Drive folder. If the folder cannot be reached from the experiment server, these generator-generalization experiments need local/uploaded meta files rather than being mixed with DiffSBDD-only evidence.
 
-## 2026-05-08 Follow-Up
+## Follow-Up
 
 The TargetDiff Google Drive folder was retried with `gdown --folder` from the experiment server. It failed before file enumeration:
 

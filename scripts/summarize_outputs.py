@@ -8,8 +8,8 @@ import pandas as pd
 
 def main() -> None:
     parser = argparse.ArgumentParser()
-    parser.add_argument("--input", default="outputs/proxy_v0")
-    parser.add_argument("--output", default="reports/proxy_v0_summary.csv")
+    parser.add_argument("--input", default="outputs/proxy")
+    parser.add_argument("--output", default="reports/proxy_summary.csv")
     args = parser.parse_args()
 
     root = Path(args.input)

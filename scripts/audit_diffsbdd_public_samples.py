@@ -306,7 +306,7 @@ def parse_args() -> argparse.Namespace:
         default=Path("/home/test/wsk/public_generators/diffsbdd_zenodo_8239058/extracted/crossdocked_fullatom_cond"),
     )
     parser.add_argument("--pdb-cache", type=Path, default=Path("/home/test/wsk/public_generators/rcsb_pdb_cache"))
-    parser.add_argument("--output-dir", type=Path, default=Path("outputs/diffsbdd_public_audit_v0"))
+    parser.add_argument("--output-dir", type=Path, default=Path("outputs/diffsbdd_public_audit"))
     parser.add_argument("--max-files", type=int, default=101)
     parser.add_argument("--max-mols-per-file", type=int, default=100)
     parser.add_argument("--workers", type=int, default=16)

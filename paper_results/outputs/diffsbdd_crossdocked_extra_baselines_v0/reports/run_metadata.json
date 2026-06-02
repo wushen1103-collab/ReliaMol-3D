@@ -1,7 +1,0 @@
-{
-  "created_at_utc": "2026-05-07T18:03:41.344749+00:00",
-  "feature_frame": "outputs/diffsbdd_crossdocked_reliamol_v0/reports/feature_frame.csv",
-  "n_candidates": 10000,
-  "n_pockets": 100,
-  "note": "rule_audit_upper_bound intentionally uses the audit label as an upper-bound sanity check and should not be positioned as a deployable baseline."
-}

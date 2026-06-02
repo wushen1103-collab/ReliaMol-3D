@@ -1,0 +1,12 @@
+{
+  "created_at_utc": "2026-05-07T19:04:42.391006+00:00",
+  "audit_dir": "outputs/diffsbdd_crossdocked_gninatypes_audit/reports",
+  "n_candidates": 10000,
+  "n_pockets": 100,
+  "positive_rate": 0.9304,
+  "pocket_radius": 16.0,
+  "train_pocket_frac": 1.0,
+  "train_pocket_min": 12,
+  "include_receptor_hydrogens": false,
+  "feature_note": "No direct failure proxy flags or direct clash/contact counts are used as model features."
+}
