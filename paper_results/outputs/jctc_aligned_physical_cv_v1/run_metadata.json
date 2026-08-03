@@ -1,0 +1,17 @@
+{
+  "candidates": 3862,
+  "pockets": 39,
+  "target": "stable_r2p0_c0p5_with_pb",
+  "seeds": [
+    13,
+    29,
+    47
+  ],
+  "coverages": [
+    0.01,
+    0.05,
+    0.1,
+    0.2,
+    0.5
+  ]
+}

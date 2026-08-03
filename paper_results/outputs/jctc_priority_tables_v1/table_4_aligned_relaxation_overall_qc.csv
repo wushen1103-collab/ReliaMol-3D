@@ -1,0 +1,2 @@
+n_candidates,n_pockets,relaxation_success_rate,final_pb_pass_rate,stable_r2p0_c0p5_with_pb_rate,median_ligand_rmsd_a,mean_contact_retention,parameterization_failure_rate
+3862,39,0.9590885551527706,0.8951320559295701,0.8293630243397203,0.7222669440152039,0.7556232813478321,0.04091144484722942

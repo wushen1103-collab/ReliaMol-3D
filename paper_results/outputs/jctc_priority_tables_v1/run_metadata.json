@@ -1,0 +1,8 @@
+{
+  "crossdocked_candidates": 10000,
+  "crossdocked_pockets": 100,
+  "aligned_candidates": 3862,
+  "aligned_pockets": 39,
+  "target": "stable_r2p0_c0p5_with_pb",
+  "note": "Aligned zero-shot uses the original audit-label OOF scores and evaluates them against independent post-relaxation public-PDB endpoints."
+}

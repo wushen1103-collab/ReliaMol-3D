@@ -1,0 +1,3 @@
+group,n_pockets,exact_frame_audit_reliability_mean,exact_frame_audit_reliability_median,median_candidate_heavy_atoms_by_pocket,median_candidate_qed_by_pocket,receptor_clash_failure_rate_mean,receptor_atoms_median,n_candidates_total
+processable_public_PDB,39,0.9261538461538462,0.97,25.0,0.46873809846222403,0.057692307692307696,3994.0,3900
+not_processable,61,0.9331147540983605,0.96,24.0,0.5009081183765358,0.04540983606557377,3214.0,6100

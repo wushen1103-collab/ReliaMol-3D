@@ -142,11 +142,80 @@ Tracked result files:
 - `paper_results/outputs/dude_public_reliability_external_ood/lot_reranking_summary.csv`
 - `paper_results/outputs/dude_public_reliability_external_ood/lot_failure_diagnosis_summary.csv`
 
+## JCTC Post-Relaxation Structural-Usability Endpoint
+
+Manuscript claim:
+
+- the full DiffSBDD pool has post-relaxation endpoint-positive rate `0.8098`;
+- QED/SA and the contact/clash rule reach `0.8700` and `0.8680` at top-10% coverage;
+- direct-excluded RF trained on the post-relaxation endpoint reaches `0.9367`;
+- endpoint overlap between the audit label and the OpenMM-derived endpoint is `0.8106`.
+
+Scripts:
+
+- `scripts/revision_r1_openmm_relaxation.py`
+- `scripts/revision_r1_analyze_physical_endpoints.py`
+- `scripts/jctc_derive_priority_tables.py`
+
+Tracked result files:
+
+- `paper_results/outputs/jctc_priority_tables_v1/table_1_crossdocked_physical_top10_mean.csv`
+- `paper_results/outputs/jctc_priority_tables_v1/table_1b_crossdocked_physical_metrics_by_seed.csv`
+- `paper_results/outputs/jctc_priority_tables_v1/table_1c_crossdocked_physical_bootstrap.csv`
+- `paper_results/outputs/jctc_priority_tables_v1/table_1d_crossdocked_endpoint_sensitivity.csv`
+- `paper_results/outputs/jctc_priority_tables_v1/table_2_crossdocked_worst_pockets.csv`
+- `paper_results/outputs/jctc_priority_tables_v1/table_3_crossdocked_endpoint_overlap.csv`
+- `paper_results/outputs/jctc_priority_tables_v1/jctc_priority_summary.md`
+
+## JCTC Aligned Public-PDB Coordinate-Stress Endpoint
+
+Manuscript claim:
+
+- 39 public-PDB pockets are processable through the aligned endpoint pipeline;
+- the processable subset has whole-pool endpoint-positive rate `0.8294`;
+- aligned endpoint calibration reaches `0.9427` for HGB full and `0.9419` for HGB direct-excluded;
+- paired pocket bootstrap gives HGB full versus QED/SA delta `0.0581` with 95% CI `[0.0291, 0.0906]`.
+
+Scripts:
+
+- `scripts/jctc_make_aligned_receptor_plan.py`
+- `scripts/revision_r1_openmm_relaxation.py`
+- `scripts/jctc_aligned_physical_cv.py`
+- `scripts/jctc_derive_priority_tables.py`
+
+Tracked result files:
+
+- `paper_results/outputs/jctc_priority_tables_v1/table_4_aligned_relaxation_overall_qc.csv`
+- `paper_results/outputs/jctc_priority_tables_v1/table_4b_aligned_relaxation_by_pocket.csv`
+- `paper_results/outputs/jctc_priority_tables_v1/table_5_aligned_zero_shot_top10_by_seed.csv`
+- `paper_results/outputs/jctc_priority_tables_v1/table_5b_aligned_zero_shot_top10_mean.csv`
+- `paper_results/outputs/jctc_priority_tables_v1/table_6_aligned_zero_shot_worst_pockets.csv`
+- `paper_results/outputs/jctc_aligned_physical_cv_v1/aligned_physical_metrics_by_seed.csv`
+- `paper_results/outputs/jctc_aligned_physical_cv_v1/aligned_physical_topk_by_seed.csv`
+- `paper_results/outputs/jctc_aligned_physical_cv_v1/aligned_physical_topk_mean.csv`
+- `paper_results/outputs/jctc_aligned_physical_cv_v1/aligned_physical_worst_pockets.csv`
+- `paper_results/outputs/jctc_aligned_physical_cv_v1/aligned_physical_paired_bootstrap.csv`
+- `paper_results/outputs/jctc_aligned_physical_cv_v1/public_pdb_processable_subset_comparison.csv`
+
+## JCTC CASF Redocking Boundary
+
+Manuscript claim:
+
+- CASF redocking is a boundary check rather than a training endpoint;
+- Vina/GNINA remain stronger than ReliaMol for near-native redocking pose ranking.
+
+Scripts:
+
+- `scripts/revision_r1_casf_redocking.py`
+- `scripts/revision_r1_casf_evaluate.py`
+
 ## Provenance
 
-The release package was built from:
+The original lightweight release package was built from:
 
 - remote source: `/home/test/wsk/16ReliaMol-3D`;
 - remote commit: `d78abc2`;
 - file inventory: `REPRODUCIBILITY_FILELIST.txt`;
 - source record: `REPRODUCIBILITY_SOURCE.txt`.
+
+The JCTC submission update adds post-relaxation endpoint scripts, CASF boundary scripts, and compact result tables in the current Git commit.

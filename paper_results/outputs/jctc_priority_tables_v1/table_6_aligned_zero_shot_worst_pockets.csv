@@ -1,0 +1,7 @@
+source,method,n_pockets,mean,min,p10,p25,bottom_quartile_mean,perfect_pockets
+aligned_public_pdb_zero_shot,qed_sa,117,0.8846153846153847,0.3,0.7,0.8,0.6909090909090909,51
+aligned_public_pdb_zero_shot,label_informed_rule,117,0.8692307692307693,0.2,0.7600000000000001,0.8,0.7200000000000001,45
+aligned_public_pdb_zero_shot,logreg_full,117,0.8897435897435898,0.3,0.7,0.8,0.6741935483870969,58
+aligned_public_pdb_zero_shot,rf_full,117,0.8094017094017095,0.2,0.5,0.7,0.5499999999999999,24
+aligned_public_pdb_zero_shot,hgb_full,117,0.8991452991452993,0.2,0.8,0.9,0.8065573770491804,56
+aligned_public_pdb_zero_shot,rf_direct_excluded,117,0.8247863247863247,0.2,0.6,0.7,0.5866666666666666,32

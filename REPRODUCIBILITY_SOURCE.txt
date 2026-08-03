@@ -1,3 +1,4 @@
 Remote source: /home/test/wsk/16ReliaMol-3D
 Remote commit: d78abc2
 Packaged at: 2026-05-23T11:52:52Z
+JCTC submission update: OpenMM post-relaxation endpoint scripts, aligned public-PDB endpoint summaries, CASF boundary scripts, and compact JCTC result tables were added to the current Git commit on 2026-08-03.

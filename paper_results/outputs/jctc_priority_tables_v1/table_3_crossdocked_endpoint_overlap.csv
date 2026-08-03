@@ -1,0 +1,6 @@
+audit_reliable,physical_stable,count,fraction
+False,False,352,0.0352
+False,True,344,0.0344
+True,False,1550,0.155
+True,True,7754,0.7754
+all,agreement,8106,0.8106
