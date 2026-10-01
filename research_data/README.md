@@ -13,6 +13,10 @@ Generation manuscript. It is not a copy of the submission files.
   assignments and receptor metadata.
 - ReliaMol3D_Benchmark_v1.0/results/ contains aggregate and pocket-level
   statistics, protocol-sensitivity analyses, and transfer diagnostics.
+- ReliaMol3D_Benchmark_v1.0/scripts/ contains analysis and sensitivity
+  scripts used to derive these tables. Set RELIAMOL_OUTPUT_ROOT to the
+  directory holding the required outputs; the homology script also accepts
+  RELIAMOL_PDB_CACHE for public receptor files.
 - ReliaMol3D_Benchmark_v1.0/data_dictionary.csv defines the published
   columns and evidence-access roles.
 - remaining_reviewer_20261001/ contains revision-specific docking-adjunct,
