@@ -1,0 +1,5 @@
+source_training_set,target_generator,source_pockets,target_pockets,overlap_pockets,is_generator_unseen,is_receptor_context_unseen
+DiffSBDD OpenMM endpoint,AR,100,97,0,True,True
+DiffSBDD OpenMM endpoint,CVAE,100,100,0,True,True
+DiffSBDD OpenMM endpoint,Pocket2Mol,100,100,0,True,True
+DiffSBDD OpenMM endpoint,TargetDiff,100,100,0,True,True

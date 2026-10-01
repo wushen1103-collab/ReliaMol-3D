@@ -1,0 +1,4 @@
+operation,candidates,pockets,repeats,median_seconds,min_seconds,max_seconds,scope
+contact/clash rule,500,5,31,0.0008485040161758661,0.0007720089051872492,0.0010308991186320782,ranking on precomputed descriptors; excludes feature extraction
+five-rule gate + QED/SA,500,5,31,0.0009911679662764072,0.0009105380158871412,0.001100683119148016,ranking on precomputed descriptors; excludes feature extraction
+audit-failure count + QED/SA,500,5,31,0.0009900869335979223,0.0009072429966181517,0.0011093670036643744,ranking on precomputed descriptors; excludes feature extraction

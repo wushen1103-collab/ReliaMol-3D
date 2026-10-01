@@ -1,0 +1,21 @@
+{
+  "release": "ReliaMol3D_Benchmark_v1.0",
+  "datasets": [
+    {
+      "dataset": "DiffSBDD",
+      "rows": 10000,
+      "pockets": 100,
+      "columns": 60
+    },
+    {
+      "dataset": "Target generators",
+      "rows": 38073,
+      "pockets": 100,
+      "columns": 12
+    }
+  ],
+  "selection_features": 41,
+  "direct_excluded_features": 34,
+  "endpoint": "preparation and minimization success; final PoseBusters pass; RMSD <= 2.0 A; contact retention >= 0.5; no final receptor clash within 1.2 A",
+  "source_note": "Derived numerical data only; raw molecular structures remain with the cited source datasets."
+}

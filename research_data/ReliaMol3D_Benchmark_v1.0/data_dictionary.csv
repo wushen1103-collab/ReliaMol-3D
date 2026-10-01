@@ -1,0 +1,52 @@
+column,category,availability,description
+mol_wt,ligand chemistry,selection time,Scalar descriptor used by the score-free benchmark representation.
+logp,ligand chemistry,selection time,Scalar descriptor used by the score-free benchmark representation.
+tpsa,ligand chemistry,selection time,Scalar descriptor used by the score-free benchmark representation.
+qed,ligand chemistry,selection time,Scalar descriptor used by the score-free benchmark representation.
+rot_bonds,ligand chemistry,selection time,Scalar descriptor used by the score-free benchmark representation.
+ring_count,ligand chemistry,selection time,Scalar descriptor used by the score-free benchmark representation.
+hetero_atoms,ligand chemistry,selection time,Scalar descriptor used by the score-free benchmark representation.
+abs_formal_charge,ligand chemistry,selection time,Scalar descriptor used by the score-free benchmark representation.
+rare_element_count,ligand chemistry,selection time,Scalar descriptor used by the score-free benchmark representation.
+heavy_atoms,ligand chemistry,selection time,Scalar descriptor used by the score-free benchmark representation.
+sa_proxy,ligand chemistry,selection time,Scalar descriptor used by the score-free benchmark representation.
+descriptor_ok,ligand chemistry,selection time,Scalar descriptor used by the score-free benchmark representation.
+atom_metal_frac,ligand chemistry,selection time,Scalar descriptor used by the score-free benchmark representation.
+atom_C_frac,ligand chemistry,selection time,Scalar descriptor used by the score-free benchmark representation.
+atom_N_frac,ligand chemistry,selection time,Scalar descriptor used by the score-free benchmark representation.
+atom_O_frac,ligand chemistry,selection time,Scalar descriptor used by the score-free benchmark representation.
+atom_S_frac,ligand chemistry,selection time,Scalar descriptor used by the score-free benchmark representation.
+atom_P_frac,ligand chemistry,selection time,Scalar descriptor used by the score-free benchmark representation.
+atom_F_frac,ligand chemistry,selection time,Scalar descriptor used by the score-free benchmark representation.
+atom_Cl_frac,ligand chemistry,selection time,Scalar descriptor used by the score-free benchmark representation.
+atom_Br_frac,ligand chemistry,selection time,Scalar descriptor used by the score-free benchmark representation.
+atom_I_frac,ligand chemistry,selection time,Scalar descriptor used by the score-free benchmark representation.
+pose_atoms,internal 3D geometry,selection time,Scalar descriptor used by the score-free benchmark representation.
+pose_radius_shape,internal 3D geometry,selection time,Scalar descriptor used by the score-free benchmark representation.
+nn_q05,internal 3D geometry,selection time,Scalar descriptor used by the score-free benchmark representation.
+nn_q10,internal 3D geometry,selection time,Scalar descriptor used by the score-free benchmark representation.
+nn_q25,internal 3D geometry,selection time,Scalar descriptor used by the score-free benchmark representation.
+nn_q50,internal 3D geometry,selection time,Scalar descriptor used by the score-free benchmark representation.
+nn_q75,internal 3D geometry,selection time,Scalar descriptor used by the score-free benchmark representation.
+nn_q90,internal 3D geometry,selection time,Scalar descriptor used by the score-free benchmark representation.
+lp_q05,ligand-pocket context,selection time,Scalar descriptor used by the score-free benchmark representation.
+lp_q10,ligand-pocket context,selection time,Scalar descriptor used by the score-free benchmark representation.
+lp_q25,ligand-pocket context,selection time,Scalar descriptor used by the score-free benchmark representation.
+lp_q50,ligand-pocket context,selection time,Scalar descriptor used by the score-free benchmark representation.
+lp_q75,ligand-pocket context,selection time,Scalar descriptor used by the score-free benchmark representation.
+lp_q90,ligand-pocket context,selection time,Scalar descriptor used by the score-free benchmark representation.
+shell_0_2,ligand-pocket context,selection time,Scalar descriptor used by the score-free benchmark representation.
+shell_2_4,ligand-pocket context,selection time,Scalar descriptor used by the score-free benchmark representation.
+shell_4_6,ligand-pocket context,selection time,Scalar descriptor used by the score-free benchmark representation.
+shell_6_8,ligand-pocket context,selection time,Scalar descriptor used by the score-free benchmark representation.
+shell_gt8,ligand-pocket context,selection time,Scalar descriptor used by the score-free benchmark representation.
+chemical_failure,direct audit rule,baseline construction only,Binary direct-rule outcome excluded from primary direct-excluded models.
+geometric_failure,direct audit rule,baseline construction only,Binary direct-rule outcome excluded from primary direct-excluded models.
+pocket_failure,direct audit rule,baseline construction only,Binary direct-rule outcome excluded from primary direct-excluded models.
+clash_failure,direct audit rule,baseline construction only,Binary direct-rule outcome excluded from primary direct-excluded models.
+synthetic_failure,direct audit rule,baseline construction only,Binary direct-rule outcome excluded from primary direct-excluded models.
+downstream_usable,endpoint,post-selection confirmation,Fixed-receptor post-relaxation computational-usability endpoint.
+final_posebusters_pass,endpoint component,post-selection confirmation,Final PoseBusters validity result after local relaxation.
+ligand_rmsd_a,endpoint component,post-selection confirmation,Ligand heavy-atom RMSD from the generated pose in angstrom.
+contact_retention,endpoint component,post-selection confirmation,Fraction of initial ligand-pocket contacts retained after relaxation.
+final_clash_atoms_1p2,endpoint component,post-selection confirmation,Final receptor-clash atom pairs within 1.2 angstrom.

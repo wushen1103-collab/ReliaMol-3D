@@ -2,7 +2,7 @@
 
 ReliaMol-3D is a post-generation reliability-fusion framework for auditing and reranking 3D structure-based molecular generation outputs. The code in this repository supports the manuscript experiments on DiffSBDD, CrossDocked receptor-coordinate provenance, PoseBusters physical-validity gating, Vina/GNINA score baselines, OpenMM fixed-receptor post-relaxation endpoint analysis, aligned public-PDB coordinate-stress calibration, CASF redocking boundary analysis, TargetDiff-family multi-generator transfer, and DUD-E controlled-failure stress testing.
 
-This is a lightweight reproducibility repository. It contains source code, experiment scripts, configs, paper-level summary tables, and small derived result files. It does not contain raw molecular datasets, generated SDF/MOL2/PT files, docking work directories, figures, PDFs, virtual environments, or large prediction tables.
+This is a lightweight reproducibility repository. It contains source code, experiment scripts, configs, paper-level summary tables, and derived endpoint data for the BIB revision. It does not contain raw molecular datasets, generated SDF/MOL2/PT files, docking work directories, figures, PDFs, virtual environments, or large model-prediction matrices.
 
 ## Repository Layout
 
@@ -126,6 +126,11 @@ python scripts/revision_r1_casf_evaluate.py --help
 ```
 
 ## Included Results
+
+The research_data directory contains derived candidate-level endpoints,
+fixed splits, pocket-level statistics, and revision diagnostics for the BIB
+manuscript. See research_data/README.md for scope and limitations. Raw ligand
+and receptor coordinate files are not redistributed there.
 
 `paper_results/` contains small derived report tables copied from the remote experiment output folders. These files are included to let readers verify manuscript-level numbers without downloading multi-GB raw files. The JCTC submission update additionally tracks compact post-relaxation endpoint summaries in `paper_results/outputs/jctc_priority_tables_v1/` and aligned public-PDB calibration summaries in `paper_results/outputs/jctc_aligned_physical_cv_v1/`. See `docs/paper_result_map.md` for a mapping between manuscript claims and result files.
 

@@ -1,0 +1,7 @@
+pocket_id,method,selected,rmsd_available,endpoint_positive,median_rmsd_a,rmsd_values_a
+1d7j-A-rec-1tco-fk5-lig-tt-docked-0-pocket10_1d7j-A-rec-1tco-fk5-lig-tt-docked-0,five_rule,10,10,8,1.0917008928751624,"1.70, 2.69, 0.92, 0.63, 0.59, 0.59, 1.65, 1.26, 1.57, 0.63"
+1d7j-A-rec-1tco-fk5-lig-tt-docked-0-pocket10_1d7j-A-rec-1tco-fk5-lig-tt-docked-0,qed_sa,10,10,8,1.0917008928751624,"1.70, 2.69, 0.92, 0.63, 0.59, 0.59, 1.65, 1.26, 1.57, 0.63"
+1d7j-A-rec-1tco-fk5-lig-tt-docked-0-pocket10_1d7j-A-rec-1tco-fk5-lig-tt-docked-0,rf,10,10,10,0.8941677337702578,"1.05, 1.20, 1.09, 0.73, 1.21, 0.73, 0.59, 1.26, 0.74, 0.44"
+2rhy-A-rec-2rhy-mlz-lig-tt-min-0-pocket10_2rhy-A-rec-2rhy-mlz-lig-tt-min-0,five_rule,10,10,7,1.2483650374869566,"2.48, 1.16, 1.59, 0.98, 2.85, 0.47, 1.34, 0.57, 2.18, 1.09"
+2rhy-A-rec-2rhy-mlz-lig-tt-min-0-pocket10_2rhy-A-rec-2rhy-mlz-lig-tt-min-0,qed_sa,10,10,5,1.8773844648776117,"2.48, 3.36, 1.16, 1.59, 0.98, 2.85, 1.34, 2.18, 1.09, 2.16"
+2rhy-A-rec-2rhy-mlz-lig-tt-min-0-pocket10_2rhy-A-rec-2rhy-mlz-lig-tt-min-0,rf,10,10,10,1.0371617729628921,"0.91, 1.16, 0.74, 1.28, 0.33, 0.68, 0.57, 1.20, 1.22, 1.83"

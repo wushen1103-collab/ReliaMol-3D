@@ -1,0 +1,2 @@
+analysis,method,reference,n_pockets,reference_failure_rate,method_failure_rate,reference_failures_per_1000,method_failures_per_1000,absolute_failure_reduction_per_1000,relative_failure_reduction,ci_low,ci_high,wins,ties,losses
+relative_failure_reduction,phys_rf_direct_excluded,qed_sa,100,0.12999999999999998,0.06333333333333332,129.99999999999997,63.33333333333332,66.66666666666663,0.5128205128205128,0.34929435247152735,0.686434831778343,53,29,18

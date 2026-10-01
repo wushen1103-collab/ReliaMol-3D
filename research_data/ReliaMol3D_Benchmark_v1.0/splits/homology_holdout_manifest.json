@@ -1,0 +1,53 @@
+{
+  "candidate_rows": 10000,
+  "pockets": 100,
+  "features": [
+    "mol_wt",
+    "logp",
+    "tpsa",
+    "qed",
+    "ring_count",
+    "hetero_atoms",
+    "atom_metal_frac",
+    "atom_C_frac",
+    "atom_N_frac",
+    "atom_O_frac",
+    "atom_S_frac",
+    "atom_P_frac",
+    "atom_F_frac",
+    "atom_Cl_frac",
+    "atom_Br_frac",
+    "atom_I_frac",
+    "pose_atoms",
+    "nn_q05",
+    "nn_q10",
+    "nn_q25",
+    "nn_q50",
+    "nn_q75",
+    "nn_q90",
+    "lp_q05",
+    "lp_q10",
+    "lp_q25",
+    "lp_q50",
+    "lp_q75",
+    "lp_q90",
+    "shell_0_2",
+    "shell_2_4",
+    "shell_4_6",
+    "shell_6_8",
+    "shell_gt8"
+  ],
+  "seeds": [
+    11,
+    22,
+    33
+  ],
+  "folds": 5,
+  "sequence_identity_definition": "global aligned exact matches divided by the longer chain length",
+  "split_columns": {
+    "domain_group": "crossdocked_domain",
+    "sequence_30": "sequence_cluster_30",
+    "sequence_40": "sequence_cluster_40",
+    "sequence_50": "sequence_cluster_50"
+  }
+}

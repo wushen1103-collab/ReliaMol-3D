@@ -1,0 +1,4 @@
+split,identity_threshold,n_clusters,largest_cluster_pockets,median_cluster_pockets,singleton_clusters
+sequence_30,0.3,77,8,1.0,66
+sequence_40,0.4,87,5,1.0,77
+sequence_50,0.5,90,5,1.0,83
