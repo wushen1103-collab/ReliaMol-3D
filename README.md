@@ -6,6 +6,12 @@ This is a lightweight reproducibility repository. It contains source code, exper
 
 ## Repository Layout
 
+The fitted 41-feature source Logistic model and its preprocessing parameters are available in
+[`models/source_logistic_41`](models/source_logistic_41). The package includes feature order,
+median imputation, StandardScaler parameters, coefficients, an inference script, and a worked example.
+This deployment model is fitted on all 10,000 DiffSBDD source candidates and is separate from the
+held-out models used for benchmark estimates.
+
 ```text
 src/reliamol3d/            Core metrics and model utilities
 scripts/                   Audit, training, scoring, and summarization scripts
