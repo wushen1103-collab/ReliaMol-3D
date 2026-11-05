@@ -1,0 +1,19 @@
+validation_id,endpoint_group,output_mode,sanitization_success,reason,source_sdf_sha256
+R2D13,endpoint_negative,1,False,"Explicit valence for atom # 2 N, 4, is greater than permitted",408ce0f12818290758cc82571fefc7a0d978694d2db200bbd61f97036d5f411c
+R2D13,endpoint_negative,2,False,"Explicit valence for atom # 2 N, 4, is greater than permitted",408ce0f12818290758cc82571fefc7a0d978694d2db200bbd61f97036d5f411c
+R2D13,endpoint_negative,3,False,"Explicit valence for atom # 2 N, 4, is greater than permitted",408ce0f12818290758cc82571fefc7a0d978694d2db200bbd61f97036d5f411c
+R2D13,endpoint_negative,4,False,"Explicit valence for atom # 2 N, 4, is greater than permitted",408ce0f12818290758cc82571fefc7a0d978694d2db200bbd61f97036d5f411c
+R2D13,endpoint_negative,5,False,"Explicit valence for atom # 2 N, 4, is greater than permitted",408ce0f12818290758cc82571fefc7a0d978694d2db200bbd61f97036d5f411c
+R2D13,endpoint_negative,6,False,"Explicit valence for atom # 2 N, 4, is greater than permitted",408ce0f12818290758cc82571fefc7a0d978694d2db200bbd61f97036d5f411c
+R2D13,endpoint_negative,7,False,"Explicit valence for atom # 2 N, 4, is greater than permitted",408ce0f12818290758cc82571fefc7a0d978694d2db200bbd61f97036d5f411c
+R2D13,endpoint_negative,8,False,"Explicit valence for atom # 2 N, 4, is greater than permitted",408ce0f12818290758cc82571fefc7a0d978694d2db200bbd61f97036d5f411c
+R2D13,endpoint_negative,9,False,"Explicit valence for atom # 2 N, 4, is greater than permitted",408ce0f12818290758cc82571fefc7a0d978694d2db200bbd61f97036d5f411c
+R2D29,endpoint_positive,1,False,"Explicit valence for atom # 6 N, 4, is greater than permitted",3dd5494a16a7b596cdfa2dc19b85a30c9772cc806c6f66798b8bf62bef94995d
+R2D29,endpoint_positive,2,False,"Explicit valence for atom # 6 N, 4, is greater than permitted",3dd5494a16a7b596cdfa2dc19b85a30c9772cc806c6f66798b8bf62bef94995d
+R2D29,endpoint_positive,3,False,"Explicit valence for atom # 6 N, 4, is greater than permitted",3dd5494a16a7b596cdfa2dc19b85a30c9772cc806c6f66798b8bf62bef94995d
+R2D29,endpoint_positive,4,False,"Explicit valence for atom # 6 N, 4, is greater than permitted",3dd5494a16a7b596cdfa2dc19b85a30c9772cc806c6f66798b8bf62bef94995d
+R2D29,endpoint_positive,5,False,"Explicit valence for atom # 6 N, 4, is greater than permitted",3dd5494a16a7b596cdfa2dc19b85a30c9772cc806c6f66798b8bf62bef94995d
+R2D29,endpoint_positive,6,False,"Explicit valence for atom # 6 N, 4, is greater than permitted",3dd5494a16a7b596cdfa2dc19b85a30c9772cc806c6f66798b8bf62bef94995d
+R2D29,endpoint_positive,7,False,"Explicit valence for atom # 6 N, 4, is greater than permitted",3dd5494a16a7b596cdfa2dc19b85a30c9772cc806c6f66798b8bf62bef94995d
+R2D29,endpoint_positive,8,False,"Explicit valence for atom # 6 N, 4, is greater than permitted",3dd5494a16a7b596cdfa2dc19b85a30c9772cc806c6f66798b8bf62bef94995d
+R2D29,endpoint_positive,9,False,"Explicit valence for atom # 6 N, 4, is greater than permitted",3dd5494a16a7b596cdfa2dc19b85a30c9772cc806c6f66798b8bf62bef94995d

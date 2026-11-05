@@ -1,0 +1,3 @@
+endpoint_group,failure_stage,n
+endpoint_negative,output_validation,1
+endpoint_positive,output_validation,1

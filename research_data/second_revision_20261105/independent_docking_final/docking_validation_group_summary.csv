@@ -1,0 +1,3 @@
+endpoint_group,n,distinct_pockets,ligand_prep_success,receptor_prep_success_or_fallback,docking_success,usable_outputs,usable_output_rate,median_runtime_seconds
+endpoint_positive,15,15,15,15,15,14,0.9333333333333333,13.764406607951969
+endpoint_negative,15,15,15,15,15,14,0.9333333333333333,18.73869486199692

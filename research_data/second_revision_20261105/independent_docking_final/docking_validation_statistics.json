@@ -1,0 +1,28 @@
+{
+  "completed_utc": "2026-11-05T01:21:46.372258+00:00",
+  "n": 30,
+  "distinct_pockets": 28,
+  "usable_rate_endpoint_positive": 0.9333333333333333,
+  "usable_rate_endpoint_positive_wilson_95ci": [
+    0.7018347012621998,
+    0.9881331045067315
+  ],
+  "usable_rate_endpoint_negative": 0.9333333333333333,
+  "usable_rate_endpoint_negative_wilson_95ci": [
+    0.7018347012621998,
+    0.9881331045067315
+  ],
+  "risk_difference_positive_minus_negative": 0.0,
+  "risk_difference_newcombe_95ci": [
+    -0.23789626220574137,
+    0.23789626220574137
+  ],
+  "risk_difference_naive_bootstrap_95ci": [
+    -0.19999999999999996,
+    0.19999999999999996
+  ],
+  "bootstrap_note": "The Newcombe score interval is used for interpretation of the difference between small-sample completion proportions; the ordinary within-group bootstrap is retained as a diagnostic only.",
+  "fisher_exact_odds_ratio": 1.0,
+  "fisher_exact_two_sided_p": 1.0,
+  "interpretation_boundary": "Small direct workflow validation; not a binding-affinity or biological-activity benchmark."
+}

@@ -1,0 +1,28 @@
+{
+  "record_status": "final",
+  "supersedes": "initial pilot docking execution report",
+  "selection_score": "QED - 0.25 * SA_proxy",
+  "selection_seed": 20261105,
+  "candidates": 30,
+  "pockets": 28,
+  "prepared": 30,
+  "vina_completed": 30,
+  "usable_sanitized_output": 28,
+  "positive_usable": "14/15",
+  "negative_usable": "14/15",
+  "group_difference": 0.0,
+  "newcombe_95_ci": [
+    -0.23789626220574137,
+    0.23789626220574137
+  ],
+  "failed_output_candidates": [
+    "R2D13",
+    "R2D29"
+  ],
+  "manuscript_table": "S31",
+  "early_pilot_not_included": true,
+  "path_columns_omitted": [
+    "sdf_file_resolved",
+    "pocket_pdb_resolved"
+  ]
+}

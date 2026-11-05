@@ -1,0 +1,9 @@
+{
+  "candidate_results.csv": "20b568e1b528a0b778af00a378937593021b94a8b829dcd7a716b7e9b3591097",
+  "docking_validation_failure_reasons.csv": "b3b552b92fecac604bbfceaa55314329aff5ce0faf520787c40116ed0efd6643",
+  "docking_validation_group_summary.csv": "789ca33ee10460f3b12ff50224b2a165b95b4baa8230941e97b910ea08d3d552",
+  "docking_validation_statistics.json": "b9a98045a34331af4e8dc3755dea70e7a57c14f5fb5000e9c2c16c14852d145d",
+  "FINAL_RECORD.json": "2877d01d9bf460388d82740485521371ff6438ca0dd6e2dfaa30b55ece9d2dc5",
+  "output_sanitization_audit.csv": "0f78ee1943231772f47afae3a1a77e2520353d4ecaa56a2843bf4209b3f90b9f",
+  "prespecified_candidate_manifest.csv": "ca01c4fc45e68db388bf14a5354febf1681f6550b12b40a97563420721f7d926"
+}

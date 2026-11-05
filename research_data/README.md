@@ -22,6 +22,11 @@ Generation manuscript. It is not a copy of the submission files.
 - remaining_reviewer_20261001/ contains revision-specific docking-adjunct,
   double-holdout, Figure 6 shortlist, timing, and feature-importance tables.
   close_remaining_reviewer_items.py records their analysis logic.
+- second_revision_20261105/independent_docking_final/ contains the final
+  Table S31 cohort and stage-specific results: 30/30 Vina searches completed,
+  with sanitized usable outputs for 14/15 candidates in each endpoint group.
+  Its README distinguishes this final matched-shortlist cohort from the
+  superseded pilot report.
 
 The numerical candidate tables do not include raw ligand or receptor
 coordinates. Obtain source structures from the cited public datasets under
