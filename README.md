@@ -138,6 +138,10 @@ fixed splits, pocket-level statistics, and revision diagnostics for the BIB
 manuscript. See research_data/README.md for scope and limitations. Raw ligand
 and receptor coordinate files are not redistributed there.
 
+The [final docking and three-seed transfer records](research_data/second_revision_20261105/README.md)
+provide the S31 outcome audit and S11/S32 statistics, with a single command
+to regenerate the summaries from recorded outcomes.
+
 `paper_results/` contains small derived report tables copied from the remote experiment output folders. These files are included to let readers verify manuscript-level numbers without downloading multi-GB raw files. The JCTC submission update additionally tracks compact post-relaxation endpoint summaries in `paper_results/outputs/jctc_priority_tables_v1/` and aligned public-PDB calibration summaries in `paper_results/outputs/jctc_aligned_physical_cv_v1/`. See `docs/paper_result_map.md` for a mapping between manuscript claims and result files.
 
 The original lightweight release was built from:

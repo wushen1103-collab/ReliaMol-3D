@@ -27,6 +27,10 @@ Generation manuscript. It is not a copy of the submission files.
   with sanitized usable outputs for 14/15 candidates in each endpoint group.
   Its README distinguishes this final matched-shortlist cohort from the
   superseded pilot report.
+- second_revision_20261105/transfer_three_seed/ contains compressed pocket-level
+  rates for seeds 11/22/33 and the final S11/S32 summaries. The parent README
+  gives one command to reproduce these summaries and the S31 statistics from
+  recorded outcomes, without rerunning experiments.
 
 The numerical candidate tables do not include raw ligand or receptor
 coordinates. Obtain source structures from the cited public datasets under
